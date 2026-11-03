@@ -1,0 +1,105 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "results": [
+    "No developer notices: index.html",
+    "Assets, accessibility references and width: index.html",
+    "Login validation empty-fields",
+    "Login validation incorrect-username",
+    "Login validation incorrect-password",
+    "Login validation invalid-credentials",
+    "Password visibility",
+    "No developer notices: cashier/take-order.html",
+    "Assets, accessibility references and width: cashier/take-order.html",
+    "Cart ₱55 less unchanged ₱10 discount = ₱45",
+    "Quantity adjusts total",
+    "Clear order retained",
+    "No developer notices: cashier/payment.html",
+    "Assets, accessibility references and width: cashier/payment.html",
+    "Insufficient cash validation",
+    "No developer notices: cashier/payment-complete.html",
+    "Assets, accessibility references and width: cashier/payment-complete.html",
+    "Receipt calculations and snapshot",
+    "Receipt print action",
+    "No developer notices: cashier/transactions.html",
+    "Assets, accessibility references and width: cashier/transactions.html",
+    "Cashier history contains receipt",
+    "No developer notices: cashier/order-details.html",
+    "Assets, accessibility references and width: cashier/order-details.html",
+    "No developer notices: admin/login.html",
+    "Assets, accessibility references and width: admin/login.html",
+    "No developer notices: admin/dashboard.html",
+    "Assets, accessibility references and width: admin/dashboard.html",
+    "No developer notices: admin/menu.html",
+    "Assets, accessibility references and width: admin/menu.html",
+    "No developer notices: admin/transactions.html",
+    "Assets, accessibility references and width: admin/transactions.html",
+    "No developer notices: admin/transaction-details.html?id=BL-20261104-001",
+    "Assets, accessibility references and width: admin/transaction-details.html?id=BL-20261104-001",
+    "No developer notices: admin/reports.html",
+    "Assets, accessibility references and width: admin/reports.html",
+    "No developer notices: admin/reports-weekly.html",
+    "Assets, accessibility references and width: admin/reports-weekly.html",
+    "No developer notices: admin/reports-monthly.html",
+    "Assets, accessibility references and width: admin/reports-monthly.html",
+    "Admin shares Cashier transaction",
+    "Admin report and CSV preserve exact totals",
+    "Historical receipt unchanged across roles",
+    "No developer notices: login/index.html",
+    "Assets, accessibility references and width: login/index.html",
+    "No developer notices: cashier/login.html",
+    "Assets, accessibility references and width: cashier/login.html",
+    "Storage failure keeps sign-in unsuccessful and displays operational error",
+    "No developer notices: login storage failure",
+    "Assets, accessibility references and width: login storage failure",
+    "No runtime errors or failed requests"
+  ],
+  "errors": [],
+  "receipt": {
+    "subtotal": 5500,
+    "discount": 1000,
+    "total": 4500,
+    "count": 1,
+    "lines": 1,
+    "orderType": "Dine-in",
+    "cashier": "Mia Santos",
+    "items": [
+      {
+        "name": "Chicken Adobo",
+        "quantity": 1,
+        "unitPrice": 5500,
+        "components": []
+      }
+    ],
+    "checkoutId": "58212e5a-865f-435a-aff0-037f682abed1",
+    "id": "BL-20261104-001",
+    "createdAt": "2026-11-03T16:37:06.918Z",
+    "cash": 10000,
+    "change": 5500
+  },
+  "report": {
+    "csv": "﻿\"Transaction no.\",\"Completed at (Asia/Manila)\",\"Cashier\",\"Order type\",\"Gross sales (PHP)\",\"Discount (PHP)\",\"Net sales (PHP)\",\"Payment method\"\r\n\"BL-20261104-001\",\"04/11/2026, 00:37:06\",\"Mia Santos\",\"Dine-in\",\"55.00\",\"10.00\",\"45.00\",\"Cash\"",
+    "total": 4500,
+    "count": 1
+  },
+  "timestamp": "2026-11-03T16:37:12.665Z",
+  "staticChecks": {
+    "javascriptSyntax": 10,
+    "deletedOrMovedFiles": 0,
+    "liveMissingFileReferences": 0,
+    "previewFilesReachableFromLiveRoots": [],
+    "dynamicRoutesReviewed": [
+      "app/script.js role entry/logout routes",
+      "cashier/script.js checkout route",
+      "cashier/payment/script.js receipt/history routes",
+      "admin/script.js details/report routes"
+    ],
+    "notes": [
+      "Original baseline: 184 files; two audit/evidence documents added.",
+      "Asset filename scan is not an unused-file proof: 7eb9d.svg is constructed dynamically by payment validation. All assets are retained.",
+      "Tests use an isolated browser profile and do not change normal browser data."
+    ]
+  }
+}

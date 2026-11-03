@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dashboard · The Bayleaf Canteen POS</title>
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/print.css" />
+    <link rel="stylesheet" href="../app/styles.css" />
+    <link rel="stylesheet" href="../cashier/payment/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script data-demo-app src="../app/script.js" defer></script>
+    <script src="../app/catalog/script.js" defer></script>
+    <script src="../cashier/script.js" defer></script>
+    <script src="../cashier/data/script.js" defer></script>
+    <script src="data/script.js" defer></script>
+    <script src="dates/script.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="dates/styles.css" />
+  </head>
+  <body data-app-role="admin" data-admin-screen="dashboard">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="app-shell phase4-app admin-app" data-figma-node="2004:32862">
+      <aside class="sidebar" aria-label="Admin workspace">
+        <div class="sidebar-identity">
+          <div class="sidebar-brand">
+            <img src="../assets/icons/67ea5.svg" alt="The Bayleaf Cavite" />
+          </div>
+          <p class="sidebar-role">ADMIN WORKSPACE</p>
+        </div>
+        <nav class="sidebar-nav" aria-label="Admin navigation">
+          <a href="dashboard.html" aria-current="page"
+            ><img src="../assets/icons/d8033.svg" alt="" /><span
+              >Dashboard</span
+            ></a
+          ><a href="menu.html"
+            ><img src="../assets/icons/b1af2.svg" alt="" /><span
+              >Menu Management</span
+            ></a
+          ><a href="transactions.html"
+            ><img src="../assets/icons/2d35e.svg" alt="" /><span
+              >Transactions</span
+            ></a
+          ><a href="reports.html"
+            ><img src="../assets/icons/1311b.svg" alt="" /><span
+              >Sales Reports</span
+            ></a
+          >
+        </nav>
+        <div class="sidebar-profile">
+          <div class="profile">
+            <span class="profile-avatar">AR</span>
+            <div>
+              <p class="profile-name">Ana Reyes</p>
+              <p class="profile-role">Admin</p>
+            </div>
+          </div>
+          <a data-demo-logout class="logout" href="../index.html"
+            ><img src="../assets/icons/97348.svg" alt="" /><span
+              >Log out</span
+            ></a
+          >
+        </div>
+      </aside>
+      <main class="workspace admin-workspace" id="main">
+        <header class="admin-heading">
+          <div>
+            <h1>Dashboard</h1>
+            <div class="admin-subtitle">
+              <p data-page-subtitle>Your canteen at a glance.</p>
+            </div>
+          </div>
+          <div class="heading-actions">
+            <div class="header-clock" aria-label="Date and time in Asia/Manila">
+              <span
+                ><img src="../assets/icons/d773b.svg" alt="" /><time
+                  data-header-date
+                  >October 31, 2026</time
+                ></span
+              ><span>·</span
+              ><span
+                ><img src="../assets/icons/567ec.svg" alt="" /><time
+                  data-header-time
+                  >3:42 PM</time
+                ></span
+              >
+            </div>
+            <div class="admin-date" style="--date-width: 220px">
+              <input
+                hidden
+                type="date"
+                data-admin-date
+                value="2026-10-31"
+                aria-label="Select date"
+              /><button
+                type="button"
+                class="field admin-date-trigger"
+                data-date-trigger
+                aria-haspopup="dialog"
+                aria-expanded="false"
+              >
+                <span data-date-label>Today · 31 Oct 2026</span
+                ><img src="../assets/icons/3e41e.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </header>
+        <section class="metrics" aria-label="Sales totals">
+          <article class="panel metric-card">
+            <p class="muted">Total Sales</p>
+            <strong data-metric="0">₱0.00</strong>
+            <p class="small muted" data-metric-note="0">
+              No completed sales today
+            </p>
+          </article>
+          <article class="panel metric-card">
+            <p class="muted">Total Transactions</p>
+            <strong data-metric="1">0</strong>
+            <p class="small muted" data-metric-note="1">
+              No completed transactions today
+            </p>
+          </article>
+          <article class="panel metric-card">
+            <p class="muted">Average Transaction</p>
+            <strong data-metric="2">₱0.00</strong>
+            <p class="small muted" data-metric-note="2">
+              Available after your first sale
+            </p>
+          </article>
+        </section>
+        <section class="panel admin-dashboard-chart">
+          <div class="row-between">
+            <h2>Sales Overview</h2>
+            <div
+              class="field select-field admin-select"
+              style="--select-width: 140px"
+            >
+              <select data-dashboard-period aria-label="Sales overview period">
+                <option value="daily">Today</option>
+                <option value="weekly">This week</option>
+                <option value="monthly">This month</option></select
+              ><img src="../assets/icons/aa8c0.svg" alt="" />
+            </div>
+          </div>
+          <hr class="divider" />
+          <div data-dashboard-chart>
+            <div class="empty-state dashboard-sales-empty">
+              <span class="empty-state__icon"
+                ><img src="../assets/icons/8e399.svg" alt=""
+              /></span>
+              <h3>No sales data yet</h3>
+              <p>Your sales will appear here after the first payment.</p>
+            </div>
+          </div>
+        </section>
+        <section class="panel admin-recent">
+          <div class="row-between">
+            <h2>Recent Transactions</h2>
+            <span class="small muted" data-dashboard-period-label>Today</span>
+          </div>
+          <hr class="divider" />
+          <div data-dashboard-recent>
+            <div class="empty-state dashboard-transactions-empty">
+              <span class="empty-state__icon"
+                ><img src="../assets/icons/1a8f7.svg" alt=""
+              /></span>
+              <h3>No transactions yet</h3>
+              <p>Completed payments will appear here.</p>
+            </div>
+          </div>
+        </section>
+        <p class="admin-message" data-admin-message role="status" hidden></p>
+      </main>
+    </div>
+    
+    <noscript><p class="app-pending">Enable JavaScript to use this application.</p></noscript>
+  </body>
+</html>

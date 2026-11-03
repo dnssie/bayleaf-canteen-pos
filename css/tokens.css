@@ -1,0 +1,38 @@
+/* Values transcribed from Figma / Design System / Foundations. */
+:root {
+  --brand-primary-olive: #56751a;
+  --brand-dark-olive: #456014;
+  --surface-light-olive: #eef3e3;
+  --surface-main-background: #f8f8f5;
+  --surface-white: #fff;
+  --border-default: #e5e5e5;
+  --text-primary: #252525;
+  --text-secondary: #707070;
+  --feedback-error: #b42318;
+  --feedback-error-background: #fdecea;
+  --font-family: 'Inter', sans-serif;
+  --font-support: 12px;
+  --font-body: 14px;
+  --font-panel: 16px;
+  --font-section: 20px;
+  --font-title: 28px;
+  --line-height: 1.4;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --radius-control: 8px;
+  --radius-card: 12px;
+  --sidebar-width: 232px;
+  --order-width: 384px;
+  --content-padding: 24px;
+  --control-height: 44px;
+  --menu-grid-gap: 16px;
+  --overlay: rgb(0 0 0 / 38%);
+}

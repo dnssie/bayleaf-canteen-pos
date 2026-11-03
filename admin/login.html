@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Login · The Bayleaf Canteen POS</title>
+    <meta
+      name="description"
+      content="Log in to The Bayleaf Canteen POS."
+    />
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../login/styles.css" />
+    <link rel="stylesheet" href="../app/styles.css" />
+    <script data-demo-app src="../app/script.js" defer></script>
+    <script src="../login/script.js" defer></script>
+  </head>
+  <body class="login-page">
+    <a class="skip-link" href="#username">Skip to login</a
+    >
+    <main class="login-screen" data-figma-node="2004:32819">
+      <section class="login-introduction" aria-label="The Bayleaf Cavite">
+        <div class="login-logo">
+          <img src="../assets/icons/05a20.svg" alt="The Bayleaf Cavite" />
+        </div>
+      </section>
+      <section class="login-region" aria-label="Admin login">
+        <form
+          id="login-form"
+          class="login-form"
+          data-role="admin"
+          data-state="default"
+          action="#login-form"
+          method="get"
+          autocomplete="off"
+          novalidate
+        >
+          <header class="login-greeting">
+            <h1>Welcome back</h1>
+            <h2>Admin Access</h2>
+            <p>Log in to manage the canteen.</p>
+          </header>
+          <nav class="login-role-selector" aria-label="Login role">
+            <div class="login-role-tabs">
+              <a class="tab" href="../admin/login.html" aria-current="page"
+                >Admin</a
+              ><a class="tab" href="../cashier/login.html">Cashier</a>
+            </div>
+          </nav>
+          <div class="login-fields">
+            <div class="login-field-group">
+              <div class="field-group">
+                <label class="field-label" for="username">Username</label>
+                <div class="field">
+                  <input
+                    id="username"
+                    type="text"
+                    placeholder="Enter your username"
+                    value=""
+                    autocomplete="off"
+                    autocapitalize="none"
+                    spellcheck="false"
+                  />
+                </div>
+              </div>
+              <p
+                id="username-feedback"
+                class="login-feedback"
+                role="alert"
+                hidden
+              ></p>
+            </div>
+            <div class="login-field-group">
+              <div class="field-group">
+                <label class="field-label" for="password">Password</label>
+                <div class="field">
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="Enter your password"
+                    value=""
+                    autocomplete="off"
+                  /><button
+                    type="button"
+                    class="icon-button"
+                    data-password-toggle
+                    aria-label="Show password"
+                    aria-pressed="false"
+                  >
+                    <img src="../assets/icons/e9f2a.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <p
+                id="password-feedback"
+                class="login-feedback"
+                role="alert"
+                hidden
+              ></p>
+              <p
+                id="form-feedback"
+                class="login-feedback login-feedback--combined"
+                role="alert"
+                hidden
+              ></p>
+            </div>
+          </div>
+          <div class="login-actions">
+            <button type="submit" class="btn btn--full">Log in</button>
+            <p class="login-guidance">For authorized canteen staff only.</p>
+          </div>
+          
+        </form>
+      </section>
+    </main>
+    
+  <noscript><p class="app-pending">Enable JavaScript to use this application.</p></noscript>
+  </body>
+</html>

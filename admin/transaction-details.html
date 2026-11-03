@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Transaction details · The Bayleaf Canteen POS</title>
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/print.css" />
+    <link rel="stylesheet" href="../app/styles.css" />
+    <link rel="stylesheet" href="../cashier/payment/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script data-demo-app src="../app/script.js" defer></script>
+    <script src="../app/catalog/script.js" defer></script>
+    <script src="../cashier/script.js" defer></script>
+    <script src="../cashier/data/script.js" defer></script>
+    <script src="data/script.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body data-app-role="admin" data-admin-screen="transaction-details">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="app-shell phase4-app admin-app" data-figma-node="2004:34118">
+      <aside class="sidebar" aria-label="Admin workspace">
+        <div class="sidebar-identity">
+          <div class="sidebar-brand">
+            <img src="../assets/icons/67ea5.svg" alt="The Bayleaf Cavite" />
+          </div>
+          <p class="sidebar-role">ADMIN WORKSPACE</p>
+        </div>
+        <nav class="sidebar-nav" aria-label="Admin navigation">
+          <a href="dashboard.html"
+            ><img src="../assets/icons/39c88.svg" alt="" /><span
+              >Dashboard</span
+            ></a
+          ><a href="menu.html"
+            ><img src="../assets/icons/b1af2.svg" alt="" /><span
+              >Menu Management</span
+            ></a
+          ><a href="transactions.html" aria-current="page"
+            ><img src="../assets/icons/390fd.svg" alt="" /><span
+              >Transactions</span
+            ></a
+          ><a href="reports.html"
+            ><img src="../assets/icons/1311b.svg" alt="" /><span
+              >Sales Reports</span
+            ></a
+          >
+        </nav>
+        <div class="sidebar-profile">
+          <div class="profile">
+            <span class="profile-avatar">AR</span>
+            <div>
+              <p class="profile-name">Ana Reyes</p>
+              <p class="profile-role">Admin</p>
+            </div>
+          </div>
+          <a data-demo-logout class="logout" href="../index.html"
+            ><img src="../assets/icons/97348.svg" alt="" /><span
+              >Log out</span
+            ></a
+          >
+        </div>
+      </aside>
+      <main class="workspace admin-workspace" id="main">
+        <header class="admin-heading">
+          <div>
+            <h1>Transaction details</h1>
+            <div class="admin-subtitle">
+              <p data-page-subtitle>BL-20261031-001</p>
+              
+            </div>
+          </div>
+          <div class="heading-actions">
+            <div class="header-clock" aria-label="Date and time in Asia/Manila">
+              <span
+                ><img src="../assets/icons/d773b.svg" alt="" /><time
+                  data-header-date
+                  >October 31, 2026</time
+                ></span
+              ><span>·</span
+              ><span
+                ><img src="../assets/icons/567ec.svg" alt="" /><time
+                  data-header-time
+                  >3:42 PM</time
+                ></span
+              >
+            </div>
+            <a
+              class="btn btn--secondary"
+              href="transactions.html"
+              data-details-back
+              ><img src="../assets/icons/f9c4d.svg" alt="" />Back to transaction
+              list</a
+            >
+          </div>
+        </header>
+        <div class="payment-columns" data-screen-content>
+          <article class="payment-card receipt" aria-label="Payment receipt">
+            <header class="receipt-identity">
+              <h2>The Bayleaf Canteen</h2>
+              <p>CASH PAYMENT RECEIPT</p>
+            </header>
+            <hr class="payment-divider" />
+            <div class="receipt-metadata">
+              <div class="payment-row">
+                <span>Transaction no.</span
+                ><span><span data-receipt-id>BL-20261031-001</span></span>
+              </div>
+              <div class="payment-row">
+                <span>Date &amp; time</span
+                ><span
+                  ><span data-receipt-date>31 Oct 2026 · 12:15 PM</span></span
+                >
+              </div>
+              <div class="payment-row">
+                <span>Cashier</span
+                ><span><span data-cashier>Mia Santos</span></span>
+              </div>
+              <div class="payment-row">
+                <span>Order type</span
+                ><span><span data-order-type>Dine-in</span></span>
+              </div>
+            </div>
+            <hr class="payment-divider" />
+            <div class="receipt-items">
+              <div class="payment-row item-head">
+                <span>ITEM / QTY × PRICE</span><span>AMOUNT</span>
+              </div>
+              <div class="receipt-item-list" data-items>
+                <div class="payment-item">
+                  <div>
+                    <p>Chicken Adobo</p>
+                    <small>1 × ₱55.00</small>
+                  </div>
+                  <span>₱55.00</span>
+                </div>
+                <div class="payment-item">
+                  <div>
+                    <p>Pork Menudo</p>
+                    <small>1 × ₱50.00</small>
+                  </div>
+                  <span>₱50.00</span>
+                </div>
+                <div class="payment-item">
+                  <div>
+                    <p>Steamed Rice</p>
+                    <small>3 × ₱15.00</small>
+                  </div>
+                  <span>₱45.00</span>
+                </div>
+              </div>
+            </div>
+            <hr class="payment-divider" />
+            <div class="receipt-totals">
+              <div class="payment-row">
+                <span>Subtotal</span
+                ><span><span data-subtotal>₱150.00</span></span>
+              </div>
+              <div class="payment-row">
+                <span><span data-discount-label>Discount (none)</span></span
+                ><span><span data-discount-value>₱0.00</span></span>
+              </div>
+              <div class="payment-row payment-total">
+                <span>Total</span><span><span data-total>₱150.00</span></span>
+              </div>
+              <hr class="payment-divider" />
+              <div class="payment-row">
+                <span>Cash received</span
+                ><span><span data-cash>₱200.00</span></span>
+              </div>
+              <div class="payment-row">
+                <span>Change</span><span><span data-change>₱50.00</span></span>
+              </div>
+            </div>
+            <p class="receipt-thanks">Thank you. Enjoy your meal!</p>
+            
+          </article>
+          <section class="payment-card transaction-overview">
+            <h2>Completed transaction</h2>
+            <p class="muted">Details of the recorded cash payment.</p>
+            <div class="payment-row">
+              <span>Payment method</span><span>Cash</span>
+            </div>
+            <div class="payment-row">
+              <span>Order type</span
+              ><span><span data-order-type>Dine-in</span></span>
+            </div>
+            <div class="payment-row">
+              <span>Items purchased</span
+              ><span><span data-item-count>5</span></span>
+            </div>
+            <div class="payment-row">
+              <span>Employee discount</span
+              ><span><span data-discount-status>Not applied</span></span>
+            </div>
+          </section>
+        </div>
+        <div class="receipt-actions">
+          <button class="btn btn--secondary" type="button" data-print>
+            Print Receipt
+          </button>
+        </div>
+        <p class="admin-message" data-admin-message role="status" hidden></p>
+      </main>
+    </div>
+    
+    <noscript><p class="app-pending">Enable JavaScript to use this application.</p></noscript>
+  </body>
+</html>

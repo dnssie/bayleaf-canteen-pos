@@ -1,0 +1,153 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "results": [
+    {
+      "route": "index.html",
+      "audit": {
+        "title": "Design system · The Bayleaf Canteen POS",
+        "fontLoaded": true,
+        "brokenImages": [],
+        "externalAssets": [],
+        "imageCount": 27,
+        "duplicateIds": [],
+        "sidebar": null,
+        "order": null,
+        "card": {
+          "x": 32,
+          "y": 1991.96875,
+          "width": 256,
+          "height": 214
+        },
+        "button": {
+          "x": 53,
+          "y": 1123.765625,
+          "width": 132.421875,
+          "height": 44
+        },
+        "board": {
+          "x": 0,
+          "y": 41.796875,
+          "width": 1440,
+          "height": 900
+        },
+        "scroll": null,
+        "overflow": false
+      }
+    },
+    {
+      "route": "design-system/index.html",
+      "audit": {
+        "title": "Design system · The Bayleaf Canteen POS",
+        "fontLoaded": true,
+        "brokenImages": [],
+        "externalAssets": [],
+        "imageCount": 27,
+        "duplicateIds": [],
+        "sidebar": null,
+        "order": null,
+        "card": {
+          "x": 32,
+          "y": 1991.96875,
+          "width": 256,
+          "height": 214
+        },
+        "button": {
+          "x": 53,
+          "y": 1123.765625,
+          "width": 132.421875,
+          "height": 44
+        },
+        "board": {
+          "x": 0,
+          "y": 41.796875,
+          "width": 1440,
+          "height": 900
+        },
+        "scroll": null,
+        "overflow": false
+      }
+    },
+    {
+      "route": "cashier/take-order.html",
+      "audit": {
+        "title": "Cashier layout preview · The Bayleaf Canteen POS",
+        "fontLoaded": true,
+        "brokenImages": [],
+        "externalAssets": [],
+        "imageCount": 54,
+        "duplicateIds": [],
+        "sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 232,
+          "height": 900
+        },
+        "order": {
+          "x": 1056,
+          "y": 0,
+          "width": 384,
+          "height": 900
+        },
+        "card": {
+          "x": 256,
+          "y": 217,
+          "width": 244.328125,
+          "height": 214
+        },
+        "button": {
+          "x": 1077,
+          "y": 832,
+          "width": 343,
+          "height": 44
+        },
+        "board": null,
+        "scroll": {
+          "x": 256,
+          "y": 217,
+          "width": 776,
+          "height": 626.203125
+        },
+        "overflow": false
+      }
+    },
+    {
+      "route": "admin/dashboard.html",
+      "audit": {
+        "title": "Admin layout preview · The Bayleaf Canteen POS",
+        "fontLoaded": true,
+        "brokenImages": [],
+        "externalAssets": [],
+        "imageCount": 12,
+        "duplicateIds": [],
+        "sidebar": {
+          "x": 0,
+          "y": 0,
+          "width": 232,
+          "height": 900
+        },
+        "order": null,
+        "card": null,
+        "button": null,
+        "board": null,
+        "scroll": null,
+        "overflow": false
+      }
+    }
+  ],
+  "nojs": {
+    "boards": 4,
+    "images": true,
+    "controls": 30
+  },
+  "errors": [],
+  "interactions": [
+    "Stepper",
+    "Password visibility",
+    "Category selection",
+    "CSS dialog"
+  ],
+  "timestamp": "2026-11-01T11:53:49.002Z"
+}

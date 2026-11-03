@@ -1,0 +1,6 @@
+@media print {
+  .sidebar,.review-tools,.preview-note,.modal-overlay { display: none !important; }
+  body,.app-shell,.workspace { background: white; height: auto; min-height: 0; min-width: 0; overflow: visible; padding: 0; }
+  .panel { break-inside: avoid; }
+  .receipt { width: 80mm; margin: 0 auto; color: black; }
+}

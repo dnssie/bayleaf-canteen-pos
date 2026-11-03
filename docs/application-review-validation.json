@@ -1,0 +1,21 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "checks": [
+    "Root login and four validation states",
+    "Cashier starts empty and item quantities survive reload",
+    "Add, edit, cancel, replace and merge bundles without double billing",
+    "Discount, order type, filters and editing draft persist locally",
+    "Both role destinations, logout, frontend route handling, and pending Admin action",
+    "Cashier draft survives logout; Clear order persists empty state",
+    "Corrupt storage handled; inactive entries rejected; canonical prices used",
+    "Unavailable storage explains limitation without throwing",
+    "HTML/CSS entry and both interfaces render without JavaScript"
+  ],
+  "sharedAndViewStylesUnchanged": true,
+  "failures": [],
+  "exceptions": [],
+  "phase4Started": false
+}

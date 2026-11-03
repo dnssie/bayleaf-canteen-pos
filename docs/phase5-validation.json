@@ -1,0 +1,1521 @@
+{
+  "passed": true,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "checks": [
+    "Admin login, all sidebar routes, empty live dashboard and no specimen navigation",
+    "Cashier-created transactions, Admin search/date/no-match filters, detail values and printing",
+    "Daily/weekly/monthly reports, gross/discount/net/average calculations, bucket/date boundaries and CSV export",
+    "Menu search/category/empty, create/edit, required/decimal validation, cancel/Escape, activation/deactivation, storage failure and stale-edit protection",
+    "Menu additions/edits/status reflected in Cashier cards and meal choices; fixed bundle price; immutable prior receipts; role navigation"
+  ],
+  "actualTransactions": [
+    {
+      "subtotal": 15000,
+      "discount": 0,
+      "total": 15000,
+      "count": 5,
+      "lines": 3,
+      "orderType": "Dine-in",
+      "cashier": "Mia Santos",
+      "items": [
+        {
+          "name": "Chicken Adobo",
+          "quantity": 1,
+          "unitPrice": 5500,
+          "components": []
+        },
+        {
+          "name": "Pork Menudo",
+          "quantity": 1,
+          "unitPrice": 5000,
+          "components": []
+        },
+        {
+          "name": "Steamed Rice",
+          "quantity": 3,
+          "unitPrice": 1500,
+          "components": []
+        }
+      ],
+      "checkoutId": "b0db8841-9427-43e1-b836-822d259bdf7e",
+      "id": "BL-20261102-001",
+      "createdAt": "2026-11-02T12:34:29.602Z",
+      "cash": 20000,
+      "change": 5000
+    },
+    {
+      "subtotal": 11000,
+      "discount": 1000,
+      "total": 10000,
+      "count": 3,
+      "lines": 1,
+      "orderType": "Takeout",
+      "cashier": "Mia Santos",
+      "items": [
+        {
+          "name": "U2R1 — 2 Ulam + 1 Rice",
+          "quantity": 1,
+          "unitPrice": 11000,
+          "components": [
+            "Chicken Adobo",
+            "Pork Menudo",
+            "Steamed Rice"
+          ]
+        }
+      ],
+      "checkoutId": "1a50fa11-0061-4fcf-959c-bf959c2c5512",
+      "id": "BL-20261102-002",
+      "createdAt": "2026-11-02T12:34:32.216Z",
+      "cash": 10000,
+      "change": 0
+    }
+  ],
+  "figma": [
+    {
+      "name": "dashboard",
+      "broken": [],
+      "overflow": false,
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "naturalWidth": 148,
+          "naturalHeight": 42
+        },
+        {
+          "file": "d8033.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "b1af2.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "d773b.svg",
+          "x": 951,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1090.515625,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "3e41e.svg",
+          "x": 1386,
+          "y": 46.5,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 1366,
+          "y": 308,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "8e399.svg",
+          "x": 824,
+          "y": 439,
+          "width": 24,
+          "height": 24,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        },
+        {
+          "file": "1a8f7.svg",
+          "x": 824,
+          "y": 737,
+          "width": 24,
+          "height": 24,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        }
+      ],
+      "panels": [
+        {
+          "class": "metrics",
+          "x": 256,
+          "y": 107,
+          "width": 1160,
+          "height": 148
+        },
+        {
+          "class": "panel metric-card",
+          "x": 256,
+          "y": 107,
+          "width": 373.328125,
+          "height": 148
+        },
+        {
+          "class": "panel metric-card",
+          "x": 649.328125,
+          "y": 107,
+          "width": 373.328125,
+          "height": 148
+        },
+        {
+          "class": "panel metric-card",
+          "x": 1042.65625,
+          "y": 107,
+          "width": 373.34375,
+          "height": 148
+        },
+        {
+          "class": "panel admin-dashboard-chart",
+          "x": 256,
+          "y": 275,
+          "width": 1160,
+          "height": 337
+        },
+        {
+          "class": "panel admin-recent",
+          "x": 256,
+          "y": 632,
+          "width": 1160,
+          "height": 238
+        }
+      ]
+    },
+    {
+      "name": "menu",
+      "broken": [],
+      "overflow": false,
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "naturalWidth": 148,
+          "naturalHeight": 42
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "5bd1b.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1010,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1149.515625,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "22fad.svg",
+          "x": 1271.203125,
+          "y": 46.5,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "ac9f3.svg",
+          "x": 268,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 842,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "1a8f7.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        },
+        {
+          "file": "b154b.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 20,
+          "naturalHeight": 20
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "b154b.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 20,
+          "naturalHeight": 20
+        },
+        {
+          "file": "e9e50.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        }
+      ],
+      "panels": [
+        {
+          "class": "admin-menu-panel",
+          "x": 256,
+          "y": 167,
+          "width": 1160,
+          "height": 722
+        }
+      ]
+    },
+    {
+      "name": "add-menu-item",
+      "broken": [],
+      "overflow": false,
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "naturalWidth": 148,
+          "naturalHeight": 42
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "5bd1b.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1010,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1149.515625,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "22fad.svg",
+          "x": 1271.203125,
+          "y": 46.5,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "ac9f3.svg",
+          "x": 268,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 842,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "1a8f7.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        },
+        {
+          "file": "b154b.svg",
+          "x": 1048,
+          "y": 198,
+          "width": 20,
+          "height": 20,
+          "naturalWidth": 20,
+          "naturalHeight": 20
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 1038,
+          "y": 411,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "b154b.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 20,
+          "naturalHeight": 20
+        },
+        {
+          "file": "e9e50.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        }
+      ],
+      "panels": [
+        {
+          "class": "admin-menu-panel",
+          "x": 256,
+          "y": 167,
+          "width": 1160,
+          "height": 722
+        },
+        {
+          "class": "admin-dialog",
+          "x": 576,
+          "y": 166,
+          "width": 520,
+          "height": 568
+        }
+      ]
+    },
+    {
+      "name": "edit-menu-item",
+      "broken": [],
+      "overflow": false,
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "naturalWidth": 148,
+          "naturalHeight": 42
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "5bd1b.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1010,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1149.515625,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "22fad.svg",
+          "x": 1271.203125,
+          "y": 46.5,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "ac9f3.svg",
+          "x": 268,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 842,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "1a8f7.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        },
+        {
+          "file": "b154b.svg",
+          "x": 1048,
+          "y": 198,
+          "width": 20,
+          "height": 20,
+          "naturalWidth": 20,
+          "naturalHeight": 20
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 1038,
+          "y": 411,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "b154b.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 20,
+          "naturalHeight": 20
+        },
+        {
+          "file": "e9e50.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        }
+      ],
+      "panels": [
+        {
+          "class": "admin-menu-panel",
+          "x": 256,
+          "y": 167,
+          "width": 1160,
+          "height": 722
+        },
+        {
+          "class": "admin-dialog",
+          "x": 576,
+          "y": 166,
+          "width": 520,
+          "height": 568
+        }
+      ]
+    },
+    {
+      "name": "deactivate-item",
+      "broken": [],
+      "overflow": false,
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "naturalWidth": 148,
+          "naturalHeight": 42
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "5bd1b.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1010,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1149.515625,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "22fad.svg",
+          "x": 1271.203125,
+          "y": 46.5,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "ac9f3.svg",
+          "x": 268,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 842,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "1a8f7.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        },
+        {
+          "file": "b154b.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 20,
+          "naturalHeight": 20
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "b154b.svg",
+          "x": 1048,
+          "y": 292.5,
+          "width": 20,
+          "height": 20,
+          "naturalWidth": 20,
+          "naturalHeight": 20
+        },
+        {
+          "file": "e9e50.svg",
+          "x": 616,
+          "y": 348.5,
+          "width": 24,
+          "height": 24,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        }
+      ],
+      "panels": [
+        {
+          "class": "admin-menu-panel",
+          "x": 256,
+          "y": 167,
+          "width": 1160,
+          "height": 722
+        },
+        {
+          "class": "admin-dialog status-dialog",
+          "x": 576,
+          "y": 260.5,
+          "width": 520,
+          "height": 379
+        }
+      ]
+    },
+    {
+      "name": "transactions",
+      "broken": [],
+      "overflow": false,
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "naturalWidth": 148,
+          "naturalHeight": 42
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "b1af2.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "390fd.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1195,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1334.515625,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "ac9f3.svg",
+          "x": 268,
+          "y": 123,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "3e41e.svg",
+          "x": 862,
+          "y": 123,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "1a8f7.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        }
+      ],
+      "panels": []
+    },
+    {
+      "name": "transaction-details",
+      "broken": [],
+      "overflow": false,
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "naturalWidth": 148,
+          "naturalHeight": 42
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "b1af2.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "390fd.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "d773b.svg",
+          "x": 957.171875,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1096.6875,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "f9c4d.svg",
+          "x": 1219.171875,
+          "y": 48,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        }
+      ],
+      "panels": []
+    },
+    {
+      "name": "reports",
+      "broken": [],
+      "overflow": false,
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "naturalWidth": 148,
+          "naturalHeight": 42
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "b1af2.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "f1e4e.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1033.40625,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1172.921875,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "6a7c5.svg",
+          "x": 1295.40625,
+          "y": 48,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "3e41e.svg",
+          "x": 1386,
+          "y": 123,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "1a8f7.svg",
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "naturalWidth": 24,
+          "naturalHeight": 24
+        }
+      ],
+      "panels": [
+        {
+          "class": "metrics",
+          "x": 256,
+          "y": 174,
+          "width": 1160,
+          "height": 148
+        },
+        {
+          "class": "panel metric-card",
+          "x": 256,
+          "y": 174,
+          "width": 373.328125,
+          "height": 148
+        },
+        {
+          "class": "panel metric-card",
+          "x": 649.328125,
+          "y": 174,
+          "width": 373.328125,
+          "height": 148
+        },
+        {
+          "class": "panel metric-card",
+          "x": 1042.65625,
+          "y": 174,
+          "width": 373.34375,
+          "height": 148
+        },
+        {
+          "class": "panel report-daily",
+          "x": 256,
+          "y": 342,
+          "width": 1160,
+          "height": 447
+        }
+      ]
+    },
+    {
+      "name": "reports-weekly",
+      "broken": [],
+      "overflow": false,
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "naturalWidth": 148,
+          "naturalHeight": 42
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "b1af2.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "f1e4e.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1033.40625,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1172.921875,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "6a7c5.svg",
+          "x": 1295.40625,
+          "y": 48,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "3e41e.svg",
+          "x": 1386,
+          "y": 123,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        }
+      ],
+      "panels": [
+        {
+          "class": "metrics",
+          "x": 256,
+          "y": 174,
+          "width": 1160,
+          "height": 148
+        },
+        {
+          "class": "panel metric-card",
+          "x": 256,
+          "y": 174,
+          "width": 373.328125,
+          "height": 148
+        },
+        {
+          "class": "panel metric-card",
+          "x": 649.328125,
+          "y": 174,
+          "width": 373.328125,
+          "height": 148
+        },
+        {
+          "class": "panel metric-card",
+          "x": 1042.65625,
+          "y": 174,
+          "width": 373.34375,
+          "height": 148
+        },
+        {
+          "class": "panel report-chart",
+          "x": 256,
+          "y": 342,
+          "width": 1160,
+          "height": 269
+        },
+        {
+          "class": "panel report-summary",
+          "x": 256,
+          "y": 631,
+          "width": 1160,
+          "height": 151
+        }
+      ]
+    },
+    {
+      "name": "reports-monthly",
+      "broken": [],
+      "overflow": false,
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "naturalWidth": 148,
+          "naturalHeight": 42
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "b1af2.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "f1e4e.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "naturalWidth": 19,
+          "naturalHeight": 19
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1033.40625,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1172.921875,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "naturalWidth": 16,
+          "naturalHeight": 16
+        },
+        {
+          "file": "6a7c5.svg",
+          "x": 1295.40625,
+          "y": 48,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        },
+        {
+          "file": "3e41e.svg",
+          "x": 1386,
+          "y": 123,
+          "width": 18,
+          "height": 18,
+          "naturalWidth": 18,
+          "naturalHeight": 18
+        }
+      ],
+      "panels": [
+        {
+          "class": "metrics",
+          "x": 256,
+          "y": 174,
+          "width": 1160,
+          "height": 148
+        },
+        {
+          "class": "panel metric-card",
+          "x": 256,
+          "y": 174,
+          "width": 373.328125,
+          "height": 148
+        },
+        {
+          "class": "panel metric-card",
+          "x": 649.328125,
+          "y": 174,
+          "width": 373.328125,
+          "height": 148
+        },
+        {
+          "class": "panel metric-card",
+          "x": 1042.65625,
+          "y": 174,
+          "width": 373.34375,
+          "height": 148
+        },
+        {
+          "class": "panel report-chart",
+          "x": 256,
+          "y": 342,
+          "width": 1160,
+          "height": 269
+        },
+        {
+          "class": "panel report-summary",
+          "x": 256,
+          "y": 631,
+          "width": 1160,
+          "height": 151
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "validatedAt": "2026-11-02T12:34:58.035Z"
+}

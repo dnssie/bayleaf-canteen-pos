@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "checks": [
+    "Current Manila clock and minute refresh",
+    "Admin-created active Hotdog visible after stale category/search restore",
+    "Cart preserved when clearing stale filters",
+    "Unchanged-catalog filter persistence",
+    "Same-page and tab-visible catalog refresh",
+    "Search/add/price of new active item",
+    "Inactive hiding and reactivation",
+    "Historical receipt data and timestamp unchanged"
+  ],
+  "clock": {
+    "actual": [
+      "November 2, 2026",
+      "9:31 PM"
+    ],
+    "expected": [
+      "November 2, 2026",
+      "9:31 PM"
+    ]
+  },
+  "tick": {
+    "actual": "9:33 PM",
+    "expected": "9:33 PM"
+  },
+  "errors": [],
+  "failed": [],
+  "validatedAt": "2026-11-02T13:33:24.848Z"
+}

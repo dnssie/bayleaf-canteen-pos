@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Monthly Sales Report · The Bayleaf Canteen POS</title>
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/print.css" />
+    <link rel="stylesheet" href="../app/styles.css" />
+    <link rel="stylesheet" href="../cashier/payment/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script data-demo-app src="../app/script.js" defer></script>
+    <script src="../app/catalog/script.js" defer></script>
+    <script src="../cashier/script.js" defer></script>
+    <script src="../cashier/data/script.js" defer></script>
+    <script src="data/script.js" defer></script>
+    <script src="dates/script.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="dates/styles.css" />
+  </head>
+  <body data-app-role="admin" data-admin-screen="reports-monthly">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="app-shell phase4-app admin-app" data-figma-node="2004:34485">
+      <aside class="sidebar" aria-label="Admin workspace">
+        <div class="sidebar-identity">
+          <div class="sidebar-brand">
+            <img src="../assets/icons/67ea5.svg" alt="The Bayleaf Cavite" />
+          </div>
+          <p class="sidebar-role">ADMIN WORKSPACE</p>
+        </div>
+        <nav class="sidebar-nav" aria-label="Admin navigation">
+          <a href="dashboard.html"
+            ><img src="../assets/icons/39c88.svg" alt="" /><span
+              >Dashboard</span
+            ></a
+          ><a href="menu.html"
+            ><img src="../assets/icons/b1af2.svg" alt="" /><span
+              >Menu Management</span
+            ></a
+          ><a href="transactions.html"
+            ><img src="../assets/icons/2d35e.svg" alt="" /><span
+              >Transactions</span
+            ></a
+          ><a href="reports.html" aria-current="page"
+            ><img src="../assets/icons/f1e4e.svg" alt="" /><span
+              >Sales Reports</span
+            ></a
+          >
+        </nav>
+        <div class="sidebar-profile">
+          <div class="profile">
+            <span class="profile-avatar">AR</span>
+            <div>
+              <p class="profile-name">Ana Reyes</p>
+              <p class="profile-role">Admin</p>
+            </div>
+          </div>
+          <a data-demo-logout class="logout" href="../index.html"
+            ><img src="../assets/icons/97348.svg" alt="" /><span
+              >Log out</span
+            ></a
+          >
+        </div>
+      </aside>
+      <main class="workspace admin-workspace" id="main">
+        <header class="admin-heading">
+          <div>
+            <h1>Monthly Sales Report</h1>
+            <div class="admin-subtitle">
+              <p data-page-subtitle>View sales for this period.</p>
+              
+            </div>
+          </div>
+          <div class="heading-actions">
+            <div class="header-clock" aria-label="Date and time in Asia/Manila">
+              <span
+                ><img src="../assets/icons/d773b.svg" alt="" /><time
+                  data-header-date
+                  >October 31, 2026</time
+                ></span
+              ><span>·</span
+              ><span
+                ><img src="../assets/icons/567ec.svg" alt="" /><time
+                  data-header-time
+                  >3:42 PM</time
+                ></span
+              >
+            </div>
+            <button type="button" class="btn" data-export-csv>
+              <img src="../assets/icons/6a7c5.svg" alt="" />Export CSV
+            </button>
+          </div>
+        </header>
+        <div class="report-controls">
+          <nav class="tabs" aria-label="Sales report period">
+            <a class="tab" href="reports.html" data-report-period="daily"
+              >Daily</a
+            ><a
+              class="tab"
+              href="reports-weekly.html"
+              data-report-period="weekly"
+              >Weekly</a
+            ><a
+              class="tab tab--selected"
+              aria-current="page"
+              href="reports-monthly.html"
+              data-report-period="monthly"
+              >Monthly</a
+            >
+          </nav>
+          <div class="admin-date" style="--date-width: 240px">
+            <input
+              hidden
+              type="date"
+              data-admin-date
+              value="2026-10-31"
+              aria-label="Select date"
+            /><button
+              type="button"
+              class="field admin-date-trigger"
+              data-date-trigger
+              aria-haspopup="dialog"
+              aria-expanded="false"
+            >
+              <span data-date-label>October 2026</span
+              ><img src="../assets/icons/3e41e.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <section class="metrics" aria-label="Sales totals">
+          <article class="panel metric-card">
+            <p class="muted">Total Sales</p>
+            <strong data-metric="0">₱12,600.00</strong>
+            <p class="small muted" data-metric-note="0">
+              Net sales after discounts
+            </p>
+          </article>
+          <article class="panel metric-card">
+            <p class="muted">Total Transactions</p>
+            <strong data-metric="1">113</strong>
+            <p class="small muted" data-metric-note="1">
+              Completed cash payments
+            </p>
+          </article>
+          <article class="panel metric-card">
+            <p class="muted">Average Transaction</p>
+            <strong data-metric="2">₱111.50</strong>
+            <p class="small muted" data-metric-note="2">
+              Average per transaction
+            </p>
+          </article>
+        </section>
+        <section class="panel report-chart">
+          <div class="row-between">
+            <h2>Sales by period</h2>
+            <span class="small muted">Cash sales · PHP</span>
+          </div>
+          <div class="report-bars monthly-bars" data-report-bars>
+            <div class="chart-column">
+              <div class="bar-area">
+                <strong>₱2,800.00</strong
+                ><span class="sales-bar" style="height: 89px"></span>
+              </div>
+              <span class="bar-label">01–07 Oct</span
+              ><span class="muted">25 transactions</span>
+            </div>
+            <div class="chart-column">
+              <div class="bar-area">
+                <strong>₱3,150.00</strong
+                ><span class="sales-bar" style="height: 100px"></span>
+              </div>
+              <span class="bar-label">08–14 Oct</span
+              ><span class="muted">28 transactions</span>
+            </div>
+            <div class="chart-column">
+              <div class="bar-area">
+                <strong>₱3,200.00</strong
+                ><span class="sales-bar" style="height: 102px"></span>
+              </div>
+              <span class="bar-label">15–21 Oct</span
+              ><span class="muted">29 transactions</span>
+            </div>
+            <div class="chart-column">
+              <div class="bar-area">
+                <strong>₱3,450.00</strong
+                ><span class="sales-bar" style="height: 110px"></span>
+              </div>
+              <span class="bar-label">22–31 Oct</span
+              ><span class="muted">31 transactions</span>
+            </div>
+          </div>
+        </section>
+        <section class="panel report-summary">
+          <h2>Sales summary</h2>
+          <div class="report-summary-values">
+            <div class="payment-row">
+              <span>Gross sales</span><span data-gross>₱12,600.00</span>
+            </div>
+            <div class="payment-row">
+              <span>Discounts</span><span data-discounts>₱0.00</span>
+            </div>
+            <div class="payment-row">
+              <span>Net sales</span><span data-net>₱12,600.00</span>
+            </div>
+          </div>
+          <hr class="divider" />
+          <p class="small muted" data-report-context>
+            113 transactions paid in cash · October 2026
+          </p>
+        </section>
+        <p class="admin-message" data-admin-message role="status" hidden></p>
+      </main>
+    </div>
+    
+    <noscript><p class="app-pending">Enable JavaScript to use this application.</p></noscript>
+  </body>
+</html>

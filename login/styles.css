@@ -1,0 +1,41 @@
+/* Scoped login layout: Figma's 1440 x 900 desktop reference. */
+.login-page { background: var(--surface-white); }
+.login-screen { display: grid; grid-template-columns: 660px minmax(0,1fr); min-width: 1100px; height: 100vh; min-height: 900px; }
+.login-introduction { position: relative; background: var(--surface-light-olive); }
+.login-logo { position: absolute; top: calc(50% - 67px); left: calc(50% - 207px); width: 413px; height: 134px; }
+.login-logo img { position: absolute; left: 5.7937px; top: 10.6502px; }
+.login-region { display: flex; flex-direction: column; align-items: center; padding-top: 220px; }
+.login-form { width: 400px; }
+.login-greeting { display: flex; flex-direction: column; gap: var(--space-2); }
+.login-greeting h1 { font-size: var(--font-title); font-weight: var(--weight-bold); line-height: 39px; }
+.login-greeting h2 { font-size: var(--font-section); font-weight: var(--weight-bold); line-height: 28px; }
+.login-greeting p { font-size: var(--font-body); line-height: 20px; color: var(--text-secondary); }
+.login-role-selector { padding-top: 24px; padding-bottom: 20px; }
+.login-role-tabs { height: 44px; display: flex; gap: 4px; padding: 2px; border: 1px solid var(--border-default); border-radius: 10px; background: var(--surface-main-background); }
+.login-role-tabs .tab { height: 38px; flex: 1; border: 0; background: transparent; font-weight: 500; color: var(--text-secondary); }
+.login-role-tabs .tab[aria-current='page'] { background: var(--brand-primary-olive); color: var(--surface-white); font-weight: 600; }
+.login-fields { display: flex; flex-direction: column; gap: 20px; }
+.login-field-group { display: flex; flex-direction: column; gap: 8px; }
+.login-form .field-group { gap: 8px; }
+.login-form .field-label { line-height: 20px; }
+.login-form .field { flex-shrink: 0; }
+.login-feedback { color: var(--feedback-error); font-size: var(--font-support); line-height: 16px; }
+.login-feedback--combined { display: flex; align-items: center; min-height: 20px; padding-inline: 6px; border-radius: 8px; }
+.login-actions { padding-top: 24px; display: flex; flex-direction: column; gap: 20px; }
+.login-form[data-state='incorrect-password'] .login-actions,
+.login-form[data-state='invalid-credentials'] .login-actions,
+.login-form[data-state='empty-fields'] .login-actions { padding-top: 16px; }
+.login-guidance { color: var(--text-secondary); font-size: var(--font-support); text-align: center; line-height: 17px; }
+.login-demo-link { position: absolute; top: 24px; right: 24px; font-size: 12px; color: var(--text-secondary); text-underline-offset: 3px; }
+.login-demo-result { margin-top: 16px; padding: 12px; background: var(--surface-light-olive); border-radius: 8px; font-size: 12px; }
+.login-demo-result a { display: inline-block; margin-top: 8px; font-weight: 600; color: var(--brand-dark-olive); }
+.login-help { max-width: 960px; padding: 32px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; scroll-margin-top: 24px; }
+.login-help code { padding: 2px 6px; background: var(--surface-main-background); border-radius: 4px; }
+.login-help-links { display: flex; gap: 16px; flex-wrap: wrap; }
+.login-help a { color: var(--brand-dark-olive); text-underline-offset: 3px; }
+.login-help table td,.login-help table th { padding: 12px; }
+.login-help caption { text-align: left; font-weight: 600; margin-bottom: 12px; }
+.login-review { max-width: 1100px; padding: 32px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+.login-review-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.login-review ul { padding-left: 20px; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+@media (max-height: 899px) { .login-demo-link { position: absolute; } }

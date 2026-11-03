@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Recent Transactions · The Bayleaf Canteen POS</title>
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/print.css" />
+    <link rel="stylesheet" href="../app/styles.css" />
+    <link rel="stylesheet" href="payment/styles.css" />
+    <script data-demo-app src="../app/script.js" defer></script>
+    <script src="../app/catalog/script.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="data/script.js" defer></script>
+    <script src="payment/script.js" defer></script>
+  </head>
+  <body data-app-role="cashier" data-cashier-screen="transactions">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="app-shell phase4-app">
+      <aside class="sidebar" aria-label="Cashier workspace">
+        <div class="sidebar-identity">
+          <div class="sidebar-brand">
+            <img src="../assets/icons/67ea5.svg" alt="The Bayleaf Cavite" />
+          </div>
+          <p class="sidebar-role">CASHIER WORKSPACE</p>
+        </div>
+        <nav class="sidebar-nav" aria-label="Cashier navigation">
+          <a href="../cashier/take-order.html"
+            ><img src="../assets/icons/b1af2.svg" alt="" /><span
+              >Take Order</span
+            ></a
+          ><a href="../cashier/transactions.html" aria-current="page"
+            ><img src="../assets/icons/390fd.svg" alt="" /><span
+              >Recent Transactions</span
+            ></a
+          >
+        </nav>
+        <div class="sidebar-profile">
+          <div class="profile">
+            <span class="profile-avatar">MS</span>
+            <div>
+              <p class="profile-name">Mia Santos</p>
+              <p class="profile-role">Cashier</p>
+            </div>
+          </div>
+          <a
+            data-demo-logout
+            class="logout"
+            href="../index.html"
+            aria-label="Log out"
+            ><img src="../assets/icons/97348.svg" alt="" /><span
+              >Log out</span
+            ></a
+          >
+        </div>
+      </aside>
+      <main class="workspace payment-workspace" id="main">
+        <header class="payment-page-heading">
+          <div>
+            <h1>Recent Transactions</h1>
+            <div class="payment-subtitle">
+              <p data-page-subtitle>Find receipts for completed orders.</p>
+              
+            </div>
+          </div>
+          <div class="heading-actions">
+            <div class="header-clock" aria-label="Date and time in Asia/Manila">
+              <span
+                ><img src="../assets/icons/d773b.svg" alt="" /><time
+                  data-header-date
+                  >October 31, 2026</time
+                ></span
+              ><span>·</span
+              ><span
+                ><img src="../assets/icons/567ec.svg" alt="" /><time
+                  data-header-time
+                  >3:42 PM</time
+                ></span
+              >
+            </div>
+          </div>
+        </header>
+        <section class="transaction-filters" aria-label="Filter transactions">
+          <label class="field transaction-search"
+            ><img src="../assets/icons/ac9f3.svg" alt="" /><input
+              type="search"
+              data-history-search
+              aria-label="Search order number"
+              placeholder="Search order number…" /></label
+          ><label class="field transaction-date"
+            ><input
+              type="date"
+              data-history-date
+              aria-label="Transaction date"
+              value="2026-10-31" /><span class="date-label" aria-hidden="true"
+              >31 Oct 2026</span
+            ><img src="../assets/icons/3e41e.svg" alt="" /></label
+          ><button type="button" class="clear-filter" data-clear-filters hidden>
+            Clear filters
+          </button>
+        </section>
+        <section
+          class="transactions-panel"
+          data-screen-content
+          aria-label="Recent transactions"
+        >
+          <table class="transactions-table">
+            <colgroup>
+              <col class="order-col" />
+              <col />
+              <col class="method-col" />
+              <col class="total-col" />
+              <col class="action-col" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">ORDER NO.</th>
+                <th scope="col">DATE &amp; TIME</th>
+                <th scope="col">PAYMENT</th>
+                <th scope="col">TOTAL</th>
+                <th scope="col">ACTION</th>
+              </tr>
+            </thead>
+            <tbody data-history-rows>
+              <tr>
+                <td>BL-20261031-001</td>
+                <td>31 Oct 2026 · 12:15 PM</td>
+                <td>Cash</td>
+                <td>₱150.00</td>
+                <td><a href="order-details.html">View receipt</a></td>
+              </tr>
+              <tr>
+                <td>BL-20261031-002</td>
+                <td>31 Oct 2026 · 12:22 PM</td>
+                <td>Cash</td>
+                <td>₱105.00</td>
+                <td><a href="order-details.html">View receipt</a></td>
+              </tr>
+              <tr>
+                <td>BL-20261031-003</td>
+                <td>31 Oct 2026 · 12:30 PM</td>
+                <td>Cash</td>
+                <td>₱70.00</td>
+                <td><a href="order-details.html">View receipt</a></td>
+              </tr>
+              <tr>
+                <td>BL-20261031-004</td>
+                <td>31 Oct 2026 · 12:38 PM</td>
+                <td>Cash</td>
+                <td>₱90.00</td>
+                <td><a href="order-details.html">View receipt</a></td>
+              </tr>
+              <tr>
+                <td>BL-20261031-005</td>
+                <td>31 Oct 2026 · 12:45 PM</td>
+                <td>Cash</td>
+                <td>₱135.00</td>
+                <td><a href="order-details.html">View receipt</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="history-empty" data-history-empty hidden>
+            <img src="../assets/icons/1a8f7.svg" alt="" />
+            <h2>No transactions yet</h2>
+            <p>Completed cash payments will appear here.</p>
+          </div>
+        </section>
+        <div class="payment-row history-summary">
+          <span data-history-count>Showing all 5 orders</span
+          ><span>Paid in cash</span>
+        </div>
+        <p
+          class="payment-message"
+          data-payment-message
+          role="status"
+          hidden
+        ></p>
+        <noscript><p class="app-pending">Enable JavaScript to use this application.</p></noscript>
+      </main>
+    </div>
+    
+  </body>
+</html>

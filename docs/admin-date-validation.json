@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "validatedAt": "2026-11-02T13:13:31.333Z",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "checks": [
+    "Trusted mouse click opens Dashboard, All Dates transaction filter and all three report calendars",
+    "Keyboard Enter/Space/arrow/selection/Escape and focus return",
+    "Single dates and inclusive custom ranges using calendar clicks or text fields",
+    "Invalid reversed range does not apply",
+    "Today/This Week/This Month/All Dates presets and reset",
+    "Search combined with ranges and no-results",
+    "Asia/Manila midnight boundaries",
+    "Daily/weekly/monthly totals, gross, discount, averages and CSV use selected periods",
+    "Detail return retains selected date",
+    "Month/year keyboard selection and body portal collision/internal scrolling",
+    "Closed Figma field dimensions and positions preserved"
+  ],
+  "closedFields": [
+    {
+      "name": "dashboard",
+      "x": 1196,
+      "y": 33.5,
+      "width": 220,
+      "height": 44
+    },
+    {
+      "name": "transactions",
+      "x": 692,
+      "y": 110,
+      "width": 200,
+      "height": 44
+    },
+    {
+      "name": "reports",
+      "x": 1176,
+      "y": 110,
+      "width": 240,
+      "height": 44
+    },
+    {
+      "name": "reports-weekly",
+      "x": 1176,
+      "y": 110,
+      "width": 240,
+      "height": 44
+    },
+    {
+      "name": "reports-monthly",
+      "x": 1176,
+      "y": 110,
+      "width": 240,
+      "height": 44
+    }
+  ],
+  "positions": [
+    {
+      "name": "dashboard",
+      "x": 1064,
+      "y": 85.5,
+      "w": 352,
+      "h": 618,
+      "parent": "BODY",
+      "scroll": 616,
+      "client": 616
+    },
+    {
+      "name": "transactions",
+      "x": 540,
+      "y": 162,
+      "w": 352,
+      "h": 618,
+      "parent": "BODY",
+      "scroll": 616,
+      "client": 616
+    },
+    {
+      "name": "reports",
+      "x": 1064,
+      "y": 162,
+      "w": 352,
+      "h": 574,
+      "parent": "BODY",
+      "scroll": 572,
+      "client": 572
+    },
+    {
+      "name": "reports-weekly",
+      "x": 1064,
+      "y": 162,
+      "w": 352,
+      "h": 574,
+      "parent": "BODY",
+      "scroll": 572,
+      "client": 572
+    },
+    {
+      "name": "reports-monthly",
+      "x": 1064,
+      "y": 162,
+      "w": 352,
+      "h": 502,
+      "parent": "BODY",
+      "scroll": 500,
+      "client": 500
+    }
+  ],
+  "small": {
+    "x": 1064,
+    "y": 8,
+    "right": 1416,
+    "bottom": 510
+  },
+  "errors": [],
+  "failedResponses": []
+}

@@ -1,0 +1,1310 @@
+{
+  "figmaFileKey": "aJh3grfQFKj2wkUxIAmdbZ",
+  "assets": [
+    {
+      "context": "found",
+      "figmaAssetName": "imgLeaf",
+      "path": "assets/icons/3abb3.svg"
+    },
+    {
+      "context": "empty",
+      "figmaAssetName": "imgChartColumn",
+      "path": "assets/icons/8e399.svg"
+    },
+    {
+      "context": "empty",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/77bd9.svg"
+    },
+    {
+      "context": "empty",
+      "figmaAssetName": "imgPlus",
+      "path": "assets/icons/22fad.svg"
+    },
+    {
+      "context": "empty",
+      "figmaAssetName": "imgSearch",
+      "path": "assets/icons/ac9f3.svg"
+    },
+    {
+      "context": "empty",
+      "figmaAssetName": "imgSearch1",
+      "path": "assets/icons/6d701.svg"
+    },
+    {
+      "context": "empty",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/1a8f7.svg"
+    },
+    {
+      "context": "empty",
+      "figmaAssetName": "imgShoppingBasket",
+      "path": "assets/icons/50493.svg"
+    },
+    {
+      "context": "empty",
+      "figmaAssetName": "imgLeaf",
+      "path": "assets/icons/3abb3.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph",
+      "path": "assets/images/0319a.png",
+      "dish": "Chicken Adobo"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph1",
+      "path": "assets/images/f9381.png",
+      "dish": "Pork Menudo"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph2",
+      "path": "assets/images/821cd.png",
+      "dish": "Pork Giniling"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph3",
+      "path": "assets/images/dda82.png",
+      "dish": "Chicken Afritada"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph4",
+      "path": "assets/images/b63e3.png",
+      "dish": "Pork Sinigang"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph5",
+      "path": "assets/images/95ec0.png",
+      "dish": "Bistek Tagalog"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph6",
+      "path": "assets/images/e3369.png",
+      "dish": "Fried Chicken"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph7",
+      "path": "assets/images/69b2f.png",
+      "dish": "Pork BBQ"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph8",
+      "path": "assets/images/2fb7c.png",
+      "dish": "Fried Fish"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph9",
+      "path": "assets/images/b848c.png",
+      "dish": "Pinakbet"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph10",
+      "path": "assets/images/495b9.png",
+      "dish": "Ginisang Sayote"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph11",
+      "path": "assets/images/aafa3.png",
+      "dish": "Ginisang Monggo"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph12",
+      "path": "assets/images/63476.png",
+      "dish": "Chopsuey"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph13",
+      "path": "assets/images/79555.png",
+      "dish": "Ginisang Ampalaya"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph14",
+      "path": "assets/images/ea7b2.png",
+      "dish": "Laing"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph15",
+      "path": "assets/images/fee3e.png",
+      "dish": "Steamed Rice"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph16",
+      "path": "assets/images/038fc.png",
+      "dish": "Fried Rice"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgFoodPhotograph17",
+      "path": "assets/images/28115.png",
+      "dish": "Assorted Chips"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/5bd1b.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgSearch",
+      "path": "assets/icons/ac9f3.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgPlus",
+      "path": "assets/icons/d197e.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgChevronDown",
+      "path": "assets/icons/aa8c0.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgX",
+      "path": "assets/icons/b8f97.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgMinus",
+      "path": "assets/icons/1ba63.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgPlus1",
+      "path": "assets/icons/1420d.svg"
+    },
+    {
+      "context": "cash",
+      "figmaAssetName": "imgArrowRight",
+      "path": "assets/icons/ff26f.svg"
+    },
+    {
+      "context": "admin",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "admin",
+      "figmaAssetName": "imgLayoutDashboard",
+      "path": "assets/icons/d8033.svg"
+    },
+    {
+      "context": "admin",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/b1af2.svg"
+    },
+    {
+      "context": "admin",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "admin",
+      "figmaAssetName": "imgChartColumn",
+      "path": "assets/icons/1311b.svg"
+    },
+    {
+      "context": "admin",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "admin",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "admin",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "admin",
+      "figmaAssetName": "imgCalendarDays",
+      "path": "assets/icons/3e41e.svg"
+    },
+    {
+      "context": "admin",
+      "figmaAssetName": "imgChevronDown",
+      "path": "assets/icons/aa8c0.svg"
+    },
+    {
+      "context": "admin",
+      "figmaAssetName": "imgChartColumn1",
+      "path": "assets/icons/8e399.svg"
+    },
+    {
+      "context": "admin",
+      "figmaAssetName": "imgReceiptText1",
+      "path": "assets/icons/1a8f7.svg"
+    },
+    {
+      "context": "controls",
+      "figmaAssetName": "imgMinus",
+      "path": "assets/icons/1ba63.svg"
+    },
+    {
+      "context": "controls",
+      "figmaAssetName": "imgPlus",
+      "path": "assets/icons/1420d.svg"
+    },
+    {
+      "context": "controls",
+      "figmaAssetName": "imgChevronDown",
+      "path": "assets/icons/aa8c0.svg"
+    },
+    {
+      "context": "controls",
+      "figmaAssetName": "imgSearch",
+      "path": "assets/icons/ac9f3.svg"
+    },
+    {
+      "context": "controls",
+      "figmaAssetName": "imgEye",
+      "path": "assets/icons/e9f2a.svg"
+    },
+    {
+      "context": "controls",
+      "figmaAssetName": "imgPlus1",
+      "path": "assets/icons/22fad.svg"
+    },
+    {
+      "context": "controls",
+      "figmaAssetName": "imgLeaf",
+      "path": "assets/icons/3abb3.svg"
+    },
+    {
+      "context": "patterns",
+      "figmaAssetName": "imgX",
+      "path": "assets/icons/b154b.svg"
+    },
+    {
+      "context": "patterns",
+      "figmaAssetName": "imgChevronDown",
+      "path": "assets/icons/aa8c0.svg"
+    },
+    {
+      "context": "patterns",
+      "figmaAssetName": "imgX1",
+      "path": "assets/icons/b8f97.svg"
+    },
+    {
+      "context": "patterns",
+      "figmaAssetName": "imgMinus",
+      "path": "assets/icons/1ba63.svg"
+    },
+    {
+      "context": "patterns",
+      "figmaAssetName": "imgPlus",
+      "path": "assets/icons/1420d.svg"
+    },
+    {
+      "context": "patterns",
+      "figmaAssetName": "imgFoodPhotograph",
+      "path": "assets/images/bd102.png"
+    },
+    {
+      "context": "patterns",
+      "figmaAssetName": "imgPlus1",
+      "path": "assets/icons/d197e.svg"
+    },
+    {
+      "context": "patterns",
+      "figmaAssetName": "imgLeaf",
+      "path": "assets/icons/3abb3.svg"
+    },
+    {
+      "context": "shared-login",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/05a20.svg",
+      "sourceNode": "2021:62",
+      "dimensions": {
+        "width": 401.431,
+        "height": 114.485
+      }
+    },
+    {
+      "context": "ordering/u1r1",
+      "figmaAssetName": "imgChevronDown",
+      "path": "assets/icons/9b50c.svg"
+    },
+    {
+      "context": "ordering/u1r1",
+      "figmaAssetName": "imgCheck",
+      "path": "assets/icons/e6ec2.svg"
+    },
+    {
+      "context": "ordering/u1r1",
+      "figmaAssetName": "imgArrowRight",
+      "path": "assets/icons/b21a7.svg"
+    },
+    {
+      "context": "ordering/meal-added",
+      "figmaAssetName": "imgX",
+      "path": "assets/icons/153bd.svg"
+    },
+    {
+      "context": "ordering/rice",
+      "figmaAssetName": "imgFoodPhotograph",
+      "path": "assets/images/3f85c.png"
+    },
+    {
+      "context": "ordering/rice",
+      "figmaAssetName": "imgFoodPhotograph1",
+      "path": "assets/images/e8cdf.png"
+    },
+    {
+      "context": "Phase 4 / Payment",
+      "figmaNode": "2004:32308",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 4 / Payment",
+      "figmaNode": "2004:32308",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/5bd1b.svg"
+    },
+    {
+      "context": "Phase 4 / Payment",
+      "figmaNode": "2004:32308",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "Phase 4 / Payment",
+      "figmaNode": "2004:32308",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 4 / Payment",
+      "figmaNode": "2004:32308",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 4 / Payment",
+      "figmaNode": "2004:32308",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 4 / Payment",
+      "figmaNode": "2004:32308",
+      "figmaAssetName": "imgArrowLeft",
+      "path": "assets/icons/f9c4d.svg"
+    },
+    {
+      "context": "Phase 4 / Payment",
+      "figmaNode": "2004:32308",
+      "figmaAssetName": "imgBanknote",
+      "path": "assets/icons/9e5e3.svg"
+    },
+    {
+      "context": "Phase 4 / Payment",
+      "figmaNode": "2004:32308",
+      "figmaAssetName": "imgCheck",
+      "path": "assets/icons/a840d.svg"
+    },
+    {
+      "context": "Phase 4 / Insufficient cash",
+      "figmaNode": "2004:32406",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 4 / Insufficient cash",
+      "figmaNode": "2004:32406",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/5bd1b.svg"
+    },
+    {
+      "context": "Phase 4 / Insufficient cash",
+      "figmaNode": "2004:32406",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "Phase 4 / Insufficient cash",
+      "figmaNode": "2004:32406",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 4 / Insufficient cash",
+      "figmaNode": "2004:32406",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 4 / Insufficient cash",
+      "figmaNode": "2004:32406",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 4 / Insufficient cash",
+      "figmaNode": "2004:32406",
+      "figmaAssetName": "imgArrowLeft",
+      "path": "assets/icons/f9c4d.svg"
+    },
+    {
+      "context": "Phase 4 / Insufficient cash",
+      "figmaNode": "2004:32406",
+      "figmaAssetName": "imgBanknote",
+      "path": "assets/icons/9e5e3.svg"
+    },
+    {
+      "context": "Phase 4 / Insufficient cash",
+      "figmaNode": "2004:32406",
+      "figmaAssetName": "imgCircleAlert",
+      "path": "assets/icons/79fd1.svg"
+    },
+    {
+      "context": "Phase 4 / Insufficient cash",
+      "figmaNode": "2004:32406",
+      "figmaAssetName": "imgCheck",
+      "path": "assets/icons/7eb9d.svg"
+    },
+    {
+      "context": "Phase 4 / Payment complete",
+      "figmaNode": "2004:32512",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 4 / Payment complete",
+      "figmaNode": "2004:32512",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/5bd1b.svg"
+    },
+    {
+      "context": "Phase 4 / Payment complete",
+      "figmaNode": "2004:32512",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "Phase 4 / Payment complete",
+      "figmaNode": "2004:32512",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 4 / Payment complete",
+      "figmaNode": "2004:32512",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 4 / Payment complete",
+      "figmaNode": "2004:32512",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 4 / Payment complete",
+      "figmaNode": "2004:32512",
+      "figmaAssetName": "imgCheck",
+      "path": "assets/icons/636ef.svg"
+    },
+    {
+      "context": "Phase 4 / Payment complete",
+      "figmaNode": "2004:32512",
+      "figmaAssetName": "imgPlus",
+      "path": "assets/icons/22fad.svg"
+    },
+    {
+      "context": "Phase 4 / Recent Transactions",
+      "figmaNode": "2004:32619",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 4 / Recent Transactions",
+      "figmaNode": "2004:32619",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/b1af2.svg"
+    },
+    {
+      "context": "Phase 4 / Recent Transactions",
+      "figmaNode": "2004:32619",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/390fd.svg"
+    },
+    {
+      "context": "Phase 4 / Recent Transactions",
+      "figmaNode": "2004:32619",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 4 / Recent Transactions",
+      "figmaNode": "2004:32619",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 4 / Recent Transactions",
+      "figmaNode": "2004:32619",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 4 / Recent Transactions",
+      "figmaNode": "2004:32619",
+      "figmaAssetName": "imgSearch",
+      "path": "assets/icons/ac9f3.svg"
+    },
+    {
+      "context": "Phase 4 / Recent Transactions",
+      "figmaNode": "2004:32619",
+      "figmaAssetName": "imgCalendarDays",
+      "path": "assets/icons/3e41e.svg"
+    },
+    {
+      "context": "Phase 4 / Order Details",
+      "figmaNode": "2004:32705",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 4 / Order Details",
+      "figmaNode": "2004:32705",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/b1af2.svg"
+    },
+    {
+      "context": "Phase 4 / Order Details",
+      "figmaNode": "2004:32705",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/390fd.svg"
+    },
+    {
+      "context": "Phase 4 / Order Details",
+      "figmaNode": "2004:32705",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 4 / Order Details",
+      "figmaNode": "2004:32705",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 4 / Order Details",
+      "figmaNode": "2004:32705",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 4 / Order Details",
+      "figmaNode": "2004:32705",
+      "figmaAssetName": "imgArrowLeft",
+      "path": "assets/icons/f9c4d.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32862",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32862",
+      "figmaAssetName": "imgLayoutDashboard",
+      "path": "assets/icons/d8033.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32862",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/b1af2.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32862",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32862",
+      "figmaAssetName": "imgChartColumn",
+      "path": "assets/icons/1311b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32862",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32862",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32862",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32862",
+      "figmaAssetName": "imgCalendarDays",
+      "path": "assets/icons/3e41e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32862",
+      "figmaAssetName": "imgChevronDown",
+      "path": "assets/icons/aa8c0.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32862",
+      "figmaAssetName": "imgChartColumn1",
+      "path": "assets/icons/8e399.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32862",
+      "figmaAssetName": "imgReceiptText1",
+      "path": "assets/icons/1a8f7.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32943",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32943",
+      "figmaAssetName": "imgLayoutDashboard",
+      "path": "assets/icons/39c88.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32943",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/5bd1b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32943",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32943",
+      "figmaAssetName": "imgChartColumn",
+      "path": "assets/icons/1311b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32943",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32943",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32943",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32943",
+      "figmaAssetName": "imgPlus",
+      "path": "assets/icons/22fad.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32943",
+      "figmaAssetName": "imgSearch",
+      "path": "assets/icons/ac9f3.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:32943",
+      "figmaAssetName": "imgChevronDown",
+      "path": "assets/icons/aa8c0.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33195",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33195",
+      "figmaAssetName": "imgLayoutDashboard",
+      "path": "assets/icons/39c88.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33195",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/5bd1b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33195",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33195",
+      "figmaAssetName": "imgChartColumn",
+      "path": "assets/icons/1311b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33195",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33195",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33195",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33195",
+      "figmaAssetName": "imgPlus",
+      "path": "assets/icons/22fad.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33195",
+      "figmaAssetName": "imgSearch",
+      "path": "assets/icons/ac9f3.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33195",
+      "figmaAssetName": "imgChevronDown",
+      "path": "assets/icons/aa8c0.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33195",
+      "figmaAssetName": "imgX",
+      "path": "assets/icons/b154b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33475",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33475",
+      "figmaAssetName": "imgLayoutDashboard",
+      "path": "assets/icons/39c88.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33475",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/5bd1b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33475",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33475",
+      "figmaAssetName": "imgChartColumn",
+      "path": "assets/icons/1311b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33475",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33475",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33475",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33475",
+      "figmaAssetName": "imgPlus",
+      "path": "assets/icons/22fad.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33475",
+      "figmaAssetName": "imgSearch",
+      "path": "assets/icons/ac9f3.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33475",
+      "figmaAssetName": "imgChevronDown",
+      "path": "assets/icons/aa8c0.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33475",
+      "figmaAssetName": "imgX",
+      "path": "assets/icons/b154b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgLayoutDashboard",
+      "path": "assets/icons/39c88.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/5bd1b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgChartColumn",
+      "path": "assets/icons/1311b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgPlus",
+      "path": "assets/icons/22fad.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgSearch",
+      "path": "assets/icons/ac9f3.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgChevronDown",
+      "path": "assets/icons/aa8c0.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgX",
+      "path": "assets/icons/b154b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:33758",
+      "figmaAssetName": "imgCircleAlert",
+      "path": "assets/icons/e9e50.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34026",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34026",
+      "figmaAssetName": "imgLayoutDashboard",
+      "path": "assets/icons/39c88.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34026",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/b1af2.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34026",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/390fd.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34026",
+      "figmaAssetName": "imgChartColumn",
+      "path": "assets/icons/1311b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34026",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34026",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34026",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34026",
+      "figmaAssetName": "imgSearch",
+      "path": "assets/icons/ac9f3.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34026",
+      "figmaAssetName": "imgCalendarDays",
+      "path": "assets/icons/3e41e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34118",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34118",
+      "figmaAssetName": "imgLayoutDashboard",
+      "path": "assets/icons/39c88.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34118",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/b1af2.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34118",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/390fd.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34118",
+      "figmaAssetName": "imgChartColumn",
+      "path": "assets/icons/1311b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34118",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34118",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34118",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34118",
+      "figmaAssetName": "imgArrowLeft",
+      "path": "assets/icons/f9c4d.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34238",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34238",
+      "figmaAssetName": "imgLayoutDashboard",
+      "path": "assets/icons/39c88.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34238",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/b1af2.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34238",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34238",
+      "figmaAssetName": "imgChartColumn",
+      "path": "assets/icons/f1e4e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34238",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34238",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34238",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34238",
+      "figmaAssetName": "imgDownload",
+      "path": "assets/icons/6a7c5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34238",
+      "figmaAssetName": "imgCalendarDays",
+      "path": "assets/icons/3e41e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34350",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34350",
+      "figmaAssetName": "imgLayoutDashboard",
+      "path": "assets/icons/39c88.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34350",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/b1af2.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34350",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34350",
+      "figmaAssetName": "imgChartColumn",
+      "path": "assets/icons/f1e4e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34350",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34350",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34350",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34350",
+      "figmaAssetName": "imgDownload",
+      "path": "assets/icons/6a7c5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34350",
+      "figmaAssetName": "imgCalendarDays",
+      "path": "assets/icons/3e41e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34485",
+      "figmaAssetName": "imgLayer1",
+      "path": "assets/icons/67ea5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34485",
+      "figmaAssetName": "imgLayoutDashboard",
+      "path": "assets/icons/39c88.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34485",
+      "figmaAssetName": "imgUtensils",
+      "path": "assets/icons/b1af2.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34485",
+      "figmaAssetName": "imgReceiptText",
+      "path": "assets/icons/2d35e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34485",
+      "figmaAssetName": "imgChartColumn",
+      "path": "assets/icons/f1e4e.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34485",
+      "figmaAssetName": "imgLogOut",
+      "path": "assets/icons/97348.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34485",
+      "figmaAssetName": "imgCalendar",
+      "path": "assets/icons/d773b.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34485",
+      "figmaAssetName": "imgClock",
+      "path": "assets/icons/567ec.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34485",
+      "figmaAssetName": "imgDownload",
+      "path": "assets/icons/6a7c5.svg"
+    },
+    {
+      "context": "Phase 5 Admin",
+      "figmaNode": "2004:34485",
+      "figmaAssetName": "imgCalendarDays",
+      "path": "assets/icons/3e41e.svg"
+    }
+  ],
+  "font": {
+    "family": "Inter",
+    "path": "assets/fonts/InterVariable.woff2",
+    "source": "https://github.com/rsms/inter",
+    "license": "assets/fonts/LICENSE.txt"
+  }
+}

@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Take Order · The Bayleaf Canteen POS</title>
+    <meta
+      name="description"
+      content="Cashier ordering and cash payments — The Bayleaf Canteen POS."
+    />
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/print.css" />
+    <link rel="stylesheet" href="../cashier/styles.css" />
+    <link rel="stylesheet" href="../app/styles.css" />
+    <script data-demo-app src="../app/script.js" defer></script>
+    <script src="../app/catalog/script.js" defer></script>
+    <script src="../cashier/script.js" defer></script>
+  </head>
+  <body data-app-role="cashier">
+    <a class="skip-link" href="#main">Skip to menu</a>
+    <div
+      class="app-shell ordering-app"
+      data-figma-node="2004:32061"
+      data-preview="live"
+      data-persist-order="true"
+      data-root="../"
+      data-initial-category="All"
+    >
+      <aside class="sidebar" aria-label="Cashier workspace">
+        <div class="sidebar-identity">
+          <div class="sidebar-brand">
+            <img src="../assets/icons/67ea5.svg" alt="The Bayleaf Cavite" />
+          </div>
+          <p class="sidebar-role">CASHIER WORKSPACE</p>
+        </div>
+        <nav class="sidebar-nav" aria-label="Cashier navigation">
+          <a href="../cashier/take-order.html" aria-current="page"
+            ><img src="../assets/icons/5bd1b.svg" alt="" /><span
+              >Take Order</span
+            ></a
+          ><a href="../cashier/transactions.html"
+            ><img src="../assets/icons/2d35e.svg" alt="" /><span
+              >Recent Transactions</span
+            ></a
+          >
+        </nav>
+        <div class="sidebar-profile">
+          <div class="profile">
+            <span class="profile-avatar">MS</span>
+            <div>
+              <p class="profile-name">Mia Santos</p>
+              <p class="profile-role">Cashier</p>
+            </div>
+          </div>
+          <a
+            data-demo-logout
+            class="logout"
+            href="../index.html"
+            aria-label="Log out"
+            ><img src="../assets/icons/97348.svg" alt="" /><span
+              >Log out</span
+            ></a
+          >
+        </div>
+      </aside>
+      <main class="register" id="main">
+        <section class="catalog" aria-label="Menu catalog">
+          <header class="catalog-heading">
+            <h1>Take Order</h1>
+            <p>Choose dishes from the menu to start an order.</p>
+            <div
+              class="header-clock"
+              aria-label="Current date and time in Asia/Manila"
+            >
+              <span
+                ><img src="../assets/icons/d773b.svg" alt="" /><time
+                  data-header-date
+                  datetime="2026-10-31"
+                  >October 31, 2026</time
+                ></span
+              ><span>·</span
+              ><span
+                ><img src="../assets/icons/567ec.svg" alt="" /><time
+                  data-header-time
+                  datetime="15:42"
+                  >3:42 PM</time
+                ></span
+              >
+            </div>
+          </header>
+          <div class="field">
+            <img src="../assets/icons/ac9f3.svg" alt="" /><input
+              type="search"
+              data-menu-search
+              aria-label="Search menu items"
+              placeholder="Search menu items…"
+            />
+          </div>
+          <nav class="tabs catalog-tabs" aria-label="Menu categories">
+            <a
+              class="tab tab--selected"
+              data-category="All"
+              href="../cashier/take-order.html"
+              aria-current="true"
+              >All</a
+            ><a class="tab" data-category="Ulam" href="#main">Ulam</a
+            ><a class="tab" data-category="Gulay" href="#main">Gulay</a
+            ><a class="tab" data-category="Rice" href="#main">Rice</a
+            ><a class="tab" data-category="Add-ons" href="#main"
+              >Add-ons</a
+            >
+          </nav>
+          <div class="menu-scroll-wrap">
+            <div
+              class="menu-scroll"
+              tabindex="0"
+              aria-label="Scrollable menu items"
+            >
+              <div class="menu-grid">
+                <article class="menu-card" data-menu-id="adobo">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/0319a.png"
+                    alt="Chicken Adobo"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Chicken Adobo</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱55.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="adobo"
+                        aria-label="Add Chicken Adobo"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="menudo">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/f9381.png"
+                    alt="Pork Menudo"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Pork Menudo</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱50.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="menudo"
+                        aria-label="Add Pork Menudo"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="giniling">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/821cd.png"
+                    alt="Pork Giniling"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Pork Giniling</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱45.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="giniling"
+                        aria-label="Add Pork Giniling"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="afritada">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/dda82.png"
+                    alt="Chicken Afritada"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Chicken Afritada</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱55.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="afritada"
+                        aria-label="Add Chicken Afritada"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="sinigang">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/b63e3.png"
+                    alt="Pork Sinigang"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Pork Sinigang</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱55.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="sinigang"
+                        aria-label="Add Pork Sinigang"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="bistek">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/95ec0.png"
+                    alt="Bistek Tagalog"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Bistek Tagalog</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱60.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="bistek"
+                        aria-label="Add Bistek Tagalog"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="chicken">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/e3369.png"
+                    alt="Fried Chicken"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Fried Chicken</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱55.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="chicken"
+                        aria-label="Add Fried Chicken"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="bbq">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/69b2f.png"
+                    alt="Pork BBQ"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Pork BBQ</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱35.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="bbq"
+                        aria-label="Add Pork BBQ"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="fish">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/2fb7c.png"
+                    alt="Fried Fish"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Fried Fish</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱45.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="fish"
+                        aria-label="Add Fried Fish"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="pinakbet">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/b848c.png"
+                    alt="Pinakbet"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Pinakbet</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱35.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="pinakbet"
+                        aria-label="Add Pinakbet"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="sayote">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/495b9.png"
+                    alt="Ginisang Sayote"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Ginisang Sayote</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱30.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="sayote"
+                        aria-label="Add Ginisang Sayote"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="monggo">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/aafa3.png"
+                    alt="Ginisang Monggo"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Ginisang Monggo</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱30.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="monggo"
+                        aria-label="Add Ginisang Monggo"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="chopsuey">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/63476.png"
+                    alt="Chopsuey"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Chopsuey</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱35.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="chopsuey"
+                        aria-label="Add Chopsuey"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="ampalaya">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/79555.png"
+                    alt="Ginisang Ampalaya"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Ginisang Ampalaya</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱30.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="ampalaya"
+                        aria-label="Add Ginisang Ampalaya"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="laing">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/ea7b2.png"
+                    alt="Laing"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Laing</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱35.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="laing"
+                        aria-label="Add Laing"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="steamed">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/fee3e.png"
+                    alt="Steamed Rice"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Steamed Rice</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱15.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="steamed"
+                        aria-label="Add Steamed Rice"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="fried">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/038fc.png"
+                    alt="Fried Rice"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Fried Rice</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱20.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="fried"
+                        aria-label="Add Fried Rice"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+                <article class="menu-card" data-menu-id="chips">
+                  <img
+                    class="menu-card__photo"
+                    src="../assets/images/28115.png"
+                    alt="Assorted Chips"
+                  />
+                  <div class="menu-card__info">
+                    <h3 class="menu-card__name">Assorted Chips</h3>
+                    <div class="row-between">
+                      <span class="menu-card__price">₱10.00</span
+                      ><button
+                        type="button"
+                        class="icon-button menu-card__add"
+                        data-add-item="chips"
+                        aria-label="Add Assorted Chips"
+                      >
+                        <img src="../assets/icons/d197e.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="empty-state search-empty" data-no-results hidden>
+                <span class="empty-state__icon"
+                  ><img src="../assets/icons/6d701.svg" alt=""
+                /></span>
+                <h3>No results found</h3>
+                <p>Try another item name or choose a different category.</p>
+              </div>
+            </div>
+            <div class="catalog-scroll-track" aria-hidden="true">
+              <div class="catalog-scroll-thumb"></div>
+            </div>
+          </div>
+          <footer class="catalog-footer">
+            <span data-catalog-count>18 available items</span
+            ><span data-catalog-hint>More dishes below ↓</span>
+          </footer>
+        </section>
+        <aside class="order-panel" aria-label="Your Order">
+          <header class="order-heading">
+            <h2>Your Order</h2>
+            <span class="small muted" data-order-count>0 items</span>
+          </header>
+          <div class="tabs" aria-label="Order type">
+            <button
+              class="tab tab--selected"
+              type="button"
+              data-order-type="Dine-in"
+              aria-pressed="true"
+            >
+              Dine-in</button
+            ><button
+              class="tab"
+              type="button"
+              data-order-type="Takeout"
+              aria-pressed="false"
+            >
+              Takeout
+            </button>
+          </div>
+          <div class="order-meal">
+            <span class="field-label" id="meal-label">Add a Meal</span>
+            <details class="meal-dropdown">
+              <summary class="field" aria-labelledby="meal-label meal-value">
+                <span id="meal-value" data-meal-label>Choose a meal</span
+                ><img src="../assets/icons/aa8c0.svg" alt="" />
+              </summary>
+              <nav class="meal-options" aria-label="Choose a meal">
+                <a
+                  href="#meal-builder"
+                  data-meal-variant="U1R1"
+                  class="meal-option-first"
+                  >U1R1 — 1 Ulam + 1 Rice — ₱70.00</a
+                ><a href="#meal-builder" data-meal-variant="U2R1"
+                  >U2R1 — 2 Ulam + 1 Rice — ₱110.00</a
+                ><a href="#meal-builder" data-meal-variant="V1R1"
+                  >V1R1 — 1 Gulay + 1 Rice — ₱45.00</a
+                >
+              </nav>
+            </details>
+            <p class="small muted">One price for the whole meal</p>
+          </div>
+          <div
+            id="meal-builder"
+            class="order-items"
+            tabindex="0"
+            aria-label="Scrollable cart and meal builder"
+          >
+            <div class="empty-state order-empty">
+              <span class="empty-state__icon"
+                ><img src="../assets/icons/50493.svg" alt=""
+              /></span>
+              <h3>Start an Order</h3>
+              <p>Choose a dish from the menu to get started.</p>
+            </div>
+          </div>
+          <div class="meal-inline-actions" hidden>
+            <button class="btn btn--secondary" type="button" data-cancel-meal>
+              Cancel</button
+            ><button class="btn" type="button" data-add-meal disabled>
+              Add Meal
+            </button>
+          </div>
+          <footer class="order-footer">
+            <div class="row-between discount-control">
+              <label for="employee-discount">Employee discount</label
+              ><label class="switch"
+                ><input
+                  id="employee-discount"
+                  type="checkbox"
+                  role="switch"
+                  data-discount
+                  aria-label="Employee discount" /><span
+                  class="switch-track"
+                ></span
+              ></label>
+            </div>
+            <p class="small muted" data-discount-note hidden>
+              Discount: ₱10.00
+            </p>
+            <div class="summary-row">
+              <span>Subtotal</span><span data-subtotal>₱0.00</span>
+            </div>
+            <div class="summary-row">
+              <span>Discount</span><span data-discount-amount>₱0.00</span>
+            </div>
+            <hr class="divider" />
+            <div class="summary-row summary-row--total">
+              <span>Total</span><span data-total>₱0.00</span>
+            </div>
+            <button
+              class="btn btn--full"
+              type="button"
+              data-payment-info
+              disabled
+              title="Review and pay for this order"
+            >
+              <img src="../assets/icons/b21a7.svg" alt="" />Continue to Payment
+            </button>
+          </footer>
+        </aside>
+      </main>
+      <p class="sr-only" role="status" aria-live="polite" data-order-status></p>
+    </div>
+    <footer class="app-footer">
+      <button type="button" data-clear-cart>Clear order</button>
+    </footer>
+    <p
+      id="pending-feature"
+      class="app-pending"
+      data-pending-message
+      tabindex="-1"
+      hidden
+    ></p>
+    <p class="app-pending" data-phase-message hidden>
+      Finish or cancel the meal selection before payment.
+    </p>
+    <noscript><p class="app-pending">Enable JavaScript to use this application.</p></noscript>
+  </body>
+</html>

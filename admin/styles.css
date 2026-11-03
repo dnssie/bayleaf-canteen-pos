@@ -1,0 +1,111 @@
+/* Phase 5 Admin. Figma frames 13–22; shared tokens, sidebar, controls, receipt and table patterns are reused. */
+.admin-app {font-optical-sizing:none;}
+.admin-workspace {gap:20px;}
+.admin-heading {display:flex;align-items:center;justify-content:space-between;gap:24px;flex-shrink:0;}
+.admin-subtitle {display:flex;align-items:center;gap:12px;margin-top:4px;color:var(--text-secondary);}
+.admin-app .panel {border:0;box-shadow:inset 0 0 0 1px var(--border-default);}
+.admin-app .metric-card {height:148px;flex-shrink:0;}
+.admin-app .metric-card strong {line-height:39px;}
+.admin-app .metrics {flex-shrink:0;}
+.admin-app .sidebar-profile .profile-name {line-height:20px;}
+.admin-date {width:var(--date-width,200px);position:relative;flex-shrink:0;}
+.admin-date input {position:absolute;inset:0;opacity:0;cursor:pointer;}
+.admin-date>span {pointer-events:none;white-space:nowrap;}
+.admin-date>img {margin-left:auto;pointer-events:none;}
+.admin-date:focus-within {outline:2px solid var(--brand-primary-olive);outline-offset:2px;}
+.admin-select {width:var(--select-width,200px);flex-shrink:0;}
+.admin-app .field {border:0;box-shadow:inset 0 0 0 1px var(--border-default);}
+.admin-app .field:focus-within {box-shadow:inset 0 0 0 2px var(--brand-primary-olive);padding-inline:12px;}
+.admin-app .field.field--error {box-shadow:inset 0 0 0 1px var(--feedback-error);}
+.admin-app .empty-state h3 {line-height:22px;}
+.admin-dashboard-chart,.admin-recent {display:flex;flex-direction:column;gap:16px;padding:20px;flex-shrink:0;}
+.admin-app :is(.admin-dashboard-chart,.admin-recent,.report-chart,.report-summary,.report-daily) h2 {font-size:18px;font-weight:600;line-height:25px;}
+.dashboard-sales-empty {height:220px;}
+.dashboard-transactions-empty {height:140px;}
+.admin-dashboard-chart .report-bars {height:220px;padding-top:32px;}
+.admin-dashboard-chart .report-bars .bar-area {height:138px;}
+.admin-recent .transactions-panel {max-height:320px;overflow:auto;}
+.menu-workspace {gap:18px;}
+.admin-menu-filters {display:flex;align-items:center;gap:16px;flex-shrink:0;}
+.menu-search {width:400px;}
+.admin-menu-panel {flex-shrink:0;position:relative;background:var(--surface-white);border-radius:12px;overflow:hidden;}
+.admin-menu-panel::after {content:'';position:absolute;inset:0;border:1px solid var(--border-default);border-radius:inherit;pointer-events:none;}
+.admin-menu-table {width:100%;border-collapse:collapse;display:block;}
+.admin-menu-table :is(thead,tbody) {display:block;}
+.admin-menu-table tr {display:grid;grid-template-columns:minmax(0,1fr) 130px 100px 120px 220px;gap:20px;align-items:center;padding:0 20px;height:36px;box-shadow:inset 0 1px var(--border-default);}
+.admin-menu-table th,.admin-menu-table td {padding:0;text-align:left;}
+.admin-menu-table thead tr {height:38px;box-shadow:none;background:var(--surface-main-background);font-size:12px;line-height:17px;color:var(--text-secondary);}
+.admin-menu-table th {font-weight:600;}
+.admin-menu-table :is(th,td):nth-child(3) {text-align:right;}
+.admin-menu-table td:nth-child(1) {font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.admin-menu-table td:nth-child(2) {color:var(--text-secondary);}
+.admin-menu-table tbody tr:nth-child(even) {background:var(--surface-main-background);}
+.admin-menu-table tr.inactive-menu-row {background:#f0f0ee;}
+.admin-menu-table .inactive-menu-row td:nth-child(-n+3) {color:var(--text-secondary);}
+.admin-menu-table .badge {font-size:12px;line-height:17px;font-weight:500;padding:3px 9px;}
+.admin-menu-table .badge--inactive {background:var(--surface-main-background);}
+.menu-row-actions {display:flex;gap:32px;align-items:center;}
+.menu-row-actions button {border:0;padding:0;color:var(--brand-primary-olive);font-weight:500;}
+.menu-row-actions .destructive-link {color:var(--feedback-error);}
+.admin-modal-layer {position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:24px 24px 24px 256px;background:var(--overlay);z-index:60;overflow:auto;}
+.admin-dialog {background:var(--surface-white);border-radius:12px;box-shadow:0 8px 24px rgb(0 0 0 / 12%),inset 0 0 0 1px var(--border-default);width:520px;max-width:100%;flex-shrink:0;max-height:calc(100vh - 48px);overflow:auto;}
+.admin-dialog-content {display:flex;flex-direction:column;gap:20px;padding:28px;min-height:568px;}
+.admin-dialog-heading {display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.admin-dialog h2 {font-size:20px;font-weight:700;line-height:28px;}
+.admin-dialog-heading button {background:transparent;}
+.admin-dialog .field-group {flex-shrink:0;}
+.admin-dialog .field-label {line-height:20px;}
+.admin-dialog .small {font-size:12px;line-height:17px;}
+.admin-dialog .modal-actions {flex-shrink:0;}
+.admin-dialog .menu-price {gap:0;}
+.form-current-status {display:flex;gap:12px;align-items:center;}
+.form-current-status .badge {line-height:17px;font-size:12px;}
+.status-dialog .admin-dialog-content {min-height:379px;}
+.status-dialog h3 {font-size:18px;font-weight:600;line-height:25px;}
+.deactivate-icon {display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--feedback-error-background);}
+.admin-message {padding:16px;border-radius:8px;color:var(--brand-dark-olive);background:var(--surface-light-olive);}
+.admin-message--error {background:var(--feedback-error-background);color:var(--feedback-error);}
+.report-controls {display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+.report-controls .tabs {gap:6px;}
+.report-controls .tab:not(.tab--selected) {font-weight:400;}
+.report-daily,.report-chart,.report-summary {display:flex;flex-direction:column;gap:16px;padding:20px;flex-shrink:0;}
+.daily-summary-heading {gap:16px;}
+.daily-summary-metrics {display:flex;gap:16px;font-size:12px;color:var(--text-secondary);line-height:17px;}
+.daily-summary-metrics strong {font-weight:600;color:var(--text-primary);}
+.daily-summary-metrics strong.olive {color:var(--brand-primary-olive);}
+.admin-app .report-daily .transactions-table tr {grid-template-columns:240px minmax(0,1fr) 140px 110px 110px;}
+.report-bars {display:flex;gap:24px;padding:0 16px;align-items:flex-end;}
+.chart-column {display:flex;flex:1;min-width:0;align-items:center;flex-direction:column;gap:8px;font-size:12px;line-height:17px;}
+.bar-area {height:138px;display:flex;flex-direction:column;gap:6px;justify-content:flex-end;align-items:center;width:100%;}
+.bar-area strong {font-weight:600;white-space:nowrap;}
+.sales-bar {width:54px;max-width:90%;background:var(--brand-primary-olive);border-radius:4px 4px 0 0;flex-shrink:0;}
+.monthly-bars .sales-bar {width:90px;}
+.bar-label {font-weight:500;}
+.report-summary-values {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;}
+.admin-app .transaction-overview h2 {font-size:20px;line-height:28px;}
+.admin-app .transaction-overview {gap:16px;}
+.admin-app .payment-card {gap:12px;}
+.admin-app .transaction-overview {gap:16px;}
+.admin-app .receipt-identity h2 {font-weight:700;}
+.admin-app .receipt-actions {margin-top:0;}
+.admin-app .transactions-panel {flex-shrink:0;}
+.admin-app .history-summary {flex-shrink:0;}
+.admin-form-busy {cursor:progress;}
+@media (max-height:650px){.admin-modal-layer{align-items:flex-start;}}
+@media (max-width:1100px){.admin-modal-layer{padding-left:24px;}.admin-menu-filters{flex-wrap:wrap;}.admin-heading{align-items:flex-start;}}
+@media print{.admin-app .admin-heading,.admin-app .admin-message{display:none!important;}}
+
+/* Preserve the Figma canvas width while retaining keyboard/wheel scrolling for longer lists. */
+.admin-workspace {scrollbar-width:none;}
+.admin-workspace::-webkit-scrollbar {display:none;}
+.admin-app .header-clock {min-width:231px;flex-shrink:0;}
+.admin-app [data-add-item] {width:161px;}
+.admin-menu-table .badge {min-width:55px;text-align:center;}
+.admin-menu-table .badge--inactive {min-width:65px;}
+.admin-menu-table tr.inactive-menu-row {background:#f0f0f0;}
+.admin-menu-table .inactive-menu-row td:nth-child(-n+3) {color:var(--text-primary);opacity:.7;}
+.admin-dialog .modal-actions [data-close-modal] {width:80px;}
+.admin-dialog [data-save-item] {width:65px;}
+.admin-dialog [data-mode="edit"] [data-save-item] {width:129px;}
+.admin-dialog [data-confirm-status] {min-width:139px;}
+.admin-message {position:fixed;right:24px;bottom:20px;max-width:600px;z-index:80;box-shadow:0 4px 16px rgb(0 0 0 / 8%);}

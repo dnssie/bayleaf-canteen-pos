@@ -1,0 +1,39 @@
+/* Date controls keep the original closed Figma field geometry. Popovers are body portals. */
+.admin-date {display:block;}
+.admin-date>[data-admin-date] {display:none;}
+.admin-date .admin-date-trigger {width:100%;cursor:pointer;text-align:left;justify-content:space-between;gap:10px;}
+.admin-date-trigger [data-date-label] {min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;pointer-events:none;}
+.admin-date-trigger img {flex-shrink:0;pointer-events:none;}
+.admin-date-popover {position:fixed;z-index:120;width:352px;max-width:calc(100vw - 16px);max-height:calc(100dvh - 16px);overflow-y:auto;display:flex;flex-direction:column;gap:12px;padding:16px;background:var(--surface-white);color:var(--text-primary);border:1px solid var(--border-default);border-radius:12px;box-shadow:0 8px 24px rgb(0 0 0 / 12%);font-family:var(--font-family);font-size:14px;line-height:20px;}
+.date-popover-heading {display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.date-popover-heading h2 {font-size:16px;line-height:22px;font-weight:600;}
+.date-presets,.date-modes {display:flex;gap:6px;flex-wrap:wrap;}
+.date-presets button,.date-modes button {border:1px solid var(--border-default);border-radius:8px;min-height:32px;padding:4px 8px;font-size:12px;background:var(--surface-white);}
+.date-presets button:hover,.date-modes button[aria-pressed=true] {background:var(--surface-light-olive);border-color:var(--brand-primary-olive);color:var(--brand-dark-olive);}
+.date-entry {display:grid;grid-template-columns:1fr;gap:10px;}
+.date-entry--range {grid-template-columns:1fr 1fr;}
+.date-entry label {display:flex;flex-direction:column;gap:4px;min-width:0;}
+.date-entry label>span {font-size:12px;color:var(--text-secondary);line-height:17px;}
+.date-entry input {width:100%;height:38px;border:1px solid var(--border-default);border-radius:8px;padding:0 8px;font-size:13px;background:white;}
+.date-entry input[aria-invalid=true] {border-color:var(--feedback-error);}
+.calendar-heading {display:flex;align-items:center;justify-content:space-between;gap:8px;}
+.calendar-heading>span {font-weight:600;}
+.calendar-heading>button {width:32px;height:32px;border:1px solid var(--border-default);border-radius:8px;font-size:22px;line-height:24px;}
+.calendar-grid {border-collapse:separate;border-spacing:3px;table-layout:fixed;width:100%;font-size:12px;}
+.calendar-grid th {font-weight:500;color:var(--text-secondary);height:24px;padding:0;}
+.calendar-grid abbr {text-decoration:none;}
+.calendar-grid td {padding:0;height:32px;}
+.calendar-grid button {border:1px solid transparent;border-radius:8px;height:32px;width:100%;padding:0;font-size:13px;}
+.calendar-grid button:hover {border-color:var(--brand-primary-olive);}
+.calendar-grid .calendar-outside {color:var(--text-secondary);}
+.calendar-grid .calendar-in-range {background:var(--surface-light-olive);color:var(--brand-dark-olive);}
+.calendar-grid .calendar-selected {background:var(--brand-primary-olive);color:white;}
+.calendar-grid [aria-current=date] {border-color:var(--brand-primary-olive);}
+.calendar-months {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
+.calendar-months button {height:36px;border:1px solid var(--border-default);border-radius:8px;}
+.calendar-months button[aria-pressed=true] {background:var(--surface-light-olive);border-color:var(--brand-primary-olive);color:var(--brand-dark-olive);font-weight:600;}
+.date-picker-help {font-size:12px;line-height:17px;color:var(--text-secondary);}
+.date-popover-actions {display:flex;align-items:center;justify-content:flex-end;gap:8px;padding-top:12px;border-top:1px solid var(--border-default);}
+.date-popover-actions .btn {height:36px;padding:0 10px;font-size:12px;}
+.date-reset {margin-right:auto;padding:0;border:0;text-align:left;color:var(--brand-primary-olive);font-size:12px;line-height:17px;}
+@media print {.admin-date-popover{display:none!important;}}

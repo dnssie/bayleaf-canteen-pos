@@ -1,0 +1,125 @@
+/* Phase 4: Figma Cashier frames 07–11. Shared controls and tokens are reused. */
+.phase4-app {font-optical-sizing:none;height:900px;min-height:900px;}
+.payment-workspace {gap:20px;overflow-y:auto;}
+.payment-page-heading {display:flex;align-items:center;justify-content:space-between;min-height:66px;flex-shrink:0;gap:24px;}
+.payment-subtitle {display:flex;align-items:center;gap:12px;margin-top:4px;color:var(--text-secondary);}
+.sample-label {font-size:12px;padding:3px 8px;border-radius:6px;background:var(--surface-light-olive);color:var(--brand-dark-olive);white-space:nowrap;}
+.payment-columns {display:flex;gap:24px;align-items:flex-start;flex-shrink:0;}
+.payment-card {display:flex;flex-direction:column;gap:16px;background:var(--surface-white);border-radius:var(--radius-card);box-shadow:inset 0 0 0 1px var(--border-default);padding:24px;min-width:0;}
+.payment-card h2 {font-size:20px;font-weight:600;line-height:1.4;}
+.order-summary {width:548px;flex-shrink:0;}
+.cash-tender {flex:1;padding:28px;}
+.cash-heading {display:flex;align-items:center;gap:10px;}
+.payment-row {display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;}
+.payment-row>span:first-child {color:var(--text-secondary);}
+.payment-row>span:last-child {font-weight:500;}
+.payment-row .olive,.olive {color:var(--brand-primary-olive);}
+.payment-divider {height:1px;min-height:1px;border:0;width:100%;margin:0;background:var(--border-default);}
+.item-head {font-size:12px;color:var(--text-secondary);}
+.item-head>span:last-child {font-weight:400;}
+.summary-items {display:flex;flex-direction:column;gap:16px;}
+.payment-item {display:flex;justify-content:space-between;align-items:center;gap:16px;padding:8px 0;}
+.payment-item p {font-weight:600;}
+.payment-item small {display:block;font-size:12px;color:var(--text-secondary);margin-top:4px;}
+.payment-item>span {font-weight:500;white-space:nowrap;}
+.payment-item .meal-components {white-space:normal;max-width:340px;}
+.payment-total>span:first-child {font-size:18px;font-weight:600;color:var(--text-primary);}
+.payment-total>span:last-child {font-size:24px;font-weight:700;}
+.amount-highlight {display:flex;flex-direction:column;gap:6px;padding:20px;border-radius:8px;background:var(--surface-light-olive);color:var(--brand-dark-olive);width:100%;}
+.amount-highlight strong {font-size:28px;font-weight:700;}
+.change-row [data-change] {color:var(--brand-primary-olive);}
+.cash-field {gap:0;}
+.cash-field:focus-within {padding-inline:11px;}
+.cash-field.field--error {border-color:var(--feedback-error);}
+.cash-error {display:flex;gap:10px;background:var(--feedback-error-background);color:var(--feedback-error);border-radius:8px;padding:14px 16px;font-size:14px;align-items:flex-start;}
+.cash-error div {display:flex;flex-direction:column;gap:4px;}
+.cash-error img {flex-shrink:0;}
+.cash-error p:first-child {font-weight:500;}
+.error-text {color:var(--feedback-error);}
+.cash-tender:has(.cash-error:not([hidden])) .change-row [data-change] {color:var(--text-primary);}
+.payment-help {text-align:center;}
+.receipt {width:540px;flex-shrink:0;gap:12px;}
+.receipt-identity {display:flex;flex-direction:column;align-items:center;gap:4px;}
+.receipt-identity h2 {font-weight:700;}
+.receipt-identity p,.receipt-thanks {font-size:12px;color:var(--text-secondary);}
+.receipt-metadata {display:flex;flex-direction:column;gap:7px;}
+.receipt-items,.receipt-item-list {display:flex;flex-direction:column;gap:12px;}
+.receipt .payment-item {padding:0;}
+.receipt .payment-item p {font-weight:500;}
+.receipt .payment-item small {margin-top:2px;}
+.receipt-totals {display:flex;flex-direction:column;gap:8px;}
+.receipt-thanks {text-align:center;}
+.payment-confirmation {width:420px;padding:28px;flex-shrink:0;}
+.payment-success {display:flex;align-items:center;justify-content:center;border-radius:50%;width:48px;height:48px;background:var(--surface-light-olive);}
+.transaction-overview {width:420px;flex-shrink:0;}
+.receipt-actions {display:flex;gap:20px;align-items:center;flex-shrink:0;}
+.receipt-link {color:var(--brand-primary-olive);font-weight:600;text-underline-offset:3px;}
+.transaction-filters {display:flex;gap:16px;align-items:center;flex-shrink:0;}
+.transaction-search {width:420px;}
+.transaction-date {width:200px;position:relative;}
+.transaction-date input {position:absolute;inset:0;opacity:0;cursor:pointer;}
+.transaction-date:focus-within {outline:2px solid var(--brand-primary-olive);outline-offset:2px;}
+.transaction-date img {margin-left:auto;pointer-events:none;}
+.date-label {pointer-events:none;}
+.clear-filter {border:0;color:var(--brand-primary-olive);text-decoration:underline;}
+.transactions-panel {border:1px solid var(--border-default);border-radius:12px;overflow:hidden;background:white;flex-shrink:0;}
+.transactions-table {border-collapse:collapse;width:100%;table-layout:fixed;}
+.order-col {width:272px;}.method-col {width:156px;}.total-col,.action-col {width:126px;}
+.transactions-table th,.transactions-table td {padding:0 8px;text-align:left;}
+.transactions-table th:first-child,.transactions-table td:first-child {padding-left:20px;}
+.transactions-table th:last-child,.transactions-table td:last-child {padding-right:20px;}
+.transactions-table thead {height:45px;background:var(--surface-main-background);color:var(--text-secondary);font-size:12px;}
+.transactions-table th {font-weight:600;}
+.transactions-table tr {height:64px;border-top:1px solid var(--border-default);}
+.transactions-table thead tr {height:45px;border:0;}
+.transactions-table tbody tr:nth-child(even) {background:var(--surface-main-background);}
+.transactions-table td:nth-child(1) {font-weight:500;}
+.transactions-table td:nth-child(2) {color:var(--text-secondary);}
+.transactions-table td:nth-child(4) {font-weight:600;}
+.transactions-table :is(th,td):nth-last-child(-n+2) {text-align:right;}
+.transactions-table a {color:var(--brand-primary-olive);font-weight:600;text-decoration:none;}
+.history-summary {font-size:12px;color:var(--text-secondary);}
+.history-summary>span:last-child {font-weight:400;}
+.history-empty {padding:48px 24px;text-align:center;display:flex;align-items:center;flex-direction:column;gap:8px;}
+.history-empty h2 {font-size:16px;}.history-empty p {color:var(--text-secondary);}
+.payment-message {padding:16px;background:var(--feedback-error-background);color:var(--feedback-error);border-radius:8px;}
+@media print {
+ @page {size:80mm auto;margin:4mm;}
+ body {background:white;min-width:0;}
+ .phase4-app {display:block;height:auto;min-height:0;min-width:0;}
+ .phase4-app .sidebar,.payment-page-heading,.payment-confirmation,.transaction-overview,.receipt-actions,.app-footer,.app-storage-warning,.payment-message,noscript {display:none!important;}
+ .payment-workspace {display:block;padding:0;overflow:visible;}
+ .payment-columns {display:block;}
+ .receipt {width:72mm;max-width:100%;padding:0;box-shadow:none;border-radius:0;break-inside:auto;font-size:11px;}
+ .receipt h2 {font-size:16px;}.receipt .payment-total>span:last-child {font-size:18px;}
+ .receipt .payment-item {break-inside:avoid;}.receipt-metadata .payment-row {gap:8px;}
+ .receipt .payment-item .meal-components {max-width:46mm;}
+}
+
+/* Figma uses rounded pixel line boxes; scope these corrections to the new screens. */
+.phase4-app {line-height:20px;}
+.phase4-app h1 {line-height:39px;}
+.phase4-app :is(.small,.sidebar-role,.profile-role,.header-clock,.sample-label,.item-head,.payment-item small,.receipt-identity p,.receipt-thanks,.history-summary) {line-height:17px;}
+.phase4-app .sidebar {border-right:0;box-shadow:inset -1px 0 var(--border-default);}
+.phase4-app .sidebar-profile {border-top:0;box-shadow:inset 0 1px var(--border-default);}
+.phase4-app .header-clock {border:0;box-shadow:inset 0 0 0 1px var(--border-default);}
+.phase4-app .payment-total>span:first-child {line-height:25px;}
+.phase4-app .payment-total>span:last-child {line-height:34px;}
+.phase4-app .amount-highlight strong {line-height:39px;}
+.phase4-app .order-summary>.payment-row:first-child {align-items:flex-start;}
+.phase4-app .cash-error {padding:14px;}
+.phase4-app .cash-field.field--error:focus-within {border-width:1px;padding-inline:12px;}
+.phase4-app .transactions-panel {border:0;box-shadow:inset 0 0 0 1px var(--border-default);}
+.phase4-app .transactions-table,.phase4-app .transactions-table :is(thead,tbody) {display:block;}
+.phase4-app .transactions-table colgroup {display:none;}
+.phase4-app .transactions-table tr {display:grid;grid-template-columns:240px minmax(0,1fr) 140px 110px 110px;gap:16px;padding:0 20px;align-items:center;}
+.phase4-app .transactions-table :is(th,td) {padding:0;}
+.phase4-app .transactions-table thead,.phase4-app .transactions-table thead tr {height:46px;line-height:17px;}
+@media print {.phase4-app .sidebar{display:none!important;}@page{size:80mm 297mm;margin:4mm;}}
+
+/* Keep the table outline visible above striped row backgrounds. */
+.phase4-app .transactions-panel {position:relative;}
+.phase4-app .transactions-panel::after {content:"";position:absolute;inset:0;border:1px solid var(--border-default);border-radius:inherit;pointer-events:none;}
+
+.receipt-demo-note{display:none;}
+@media print{.receipt-demo-note{display:block;text-align:center;font-size:10px;color:black;}}

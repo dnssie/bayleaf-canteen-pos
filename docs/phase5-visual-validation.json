@@ -1,0 +1,1083 @@
+{
+  "passed": true,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "validatedAt": "2026-11-02T12:27:46.799Z",
+  "checks": [
+    {
+      "name": "dashboard",
+      "geometry": [
+        {
+          "selector": ".metrics",
+          "x": 256,
+          "y": 107,
+          "width": 1160,
+          "height": 148
+        },
+        {
+          "selector": ".admin-dashboard-chart",
+          "x": 256,
+          "y": 275,
+          "width": 1160,
+          "height": 337
+        },
+        {
+          "selector": ".admin-recent",
+          "x": 256,
+          "y": 632,
+          "width": 1160,
+          "height": 238
+        }
+      ],
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "loaded": true
+        },
+        {
+          "file": "d8033.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "b1af2.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "d773b.svg",
+          "x": 951,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1090.515625,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "3e41e.svg",
+          "x": 1386,
+          "y": 46.5,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 1366,
+          "y": 308,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "8e399.svg",
+          "x": 824,
+          "y": 439,
+          "width": 24,
+          "height": 24,
+          "loaded": true
+        },
+        {
+          "file": "1a8f7.svg",
+          "x": 824,
+          "y": 737,
+          "width": 24,
+          "height": 24,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "menu",
+      "geometry": [
+        {
+          "selector": ".admin-menu-panel",
+          "x": 256,
+          "y": 167,
+          "width": 1160,
+          "height": 722
+        }
+      ],
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "loaded": true
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "5bd1b.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1010,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1149.515625,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "22fad.svg",
+          "x": 1271.203125,
+          "y": 46.5,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "ac9f3.svg",
+          "x": 268,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 842,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "add-menu-item",
+      "geometry": [
+        {
+          "selector": "[data-menu-modal] .admin-dialog",
+          "x": 576,
+          "y": 166,
+          "width": 520,
+          "height": 568
+        }
+      ],
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "loaded": true
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "5bd1b.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1010,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1149.515625,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "22fad.svg",
+          "x": 1271.203125,
+          "y": 46.5,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "ac9f3.svg",
+          "x": 268,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 842,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "b154b.svg",
+          "x": 1048,
+          "y": 198,
+          "width": 20,
+          "height": 20,
+          "loaded": true
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 1038,
+          "y": 411,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "edit-menu-item",
+      "geometry": [
+        {
+          "selector": "[data-menu-modal] .admin-dialog",
+          "x": 576,
+          "y": 166,
+          "width": 520,
+          "height": 568
+        }
+      ],
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "loaded": true
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "5bd1b.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1010,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1149.515625,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "22fad.svg",
+          "x": 1271.203125,
+          "y": 46.5,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "ac9f3.svg",
+          "x": 268,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 842,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "b154b.svg",
+          "x": 1048,
+          "y": 198,
+          "width": 20,
+          "height": 20,
+          "loaded": true
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 1038,
+          "y": 411,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "deactivate-item",
+      "geometry": [
+        {
+          "selector": "[data-status-modal] .admin-dialog",
+          "x": 576,
+          "y": 260.5,
+          "width": 520,
+          "height": 379
+        }
+      ],
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "loaded": true
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "5bd1b.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1010,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1149.515625,
+          "y": 47.5,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "22fad.svg",
+          "x": 1271.203125,
+          "y": 46.5,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "ac9f3.svg",
+          "x": 268,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "aa8c0.svg",
+          "x": 842,
+          "y": 118,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "b154b.svg",
+          "x": 1048,
+          "y": 292.5,
+          "width": 20,
+          "height": 20,
+          "loaded": true
+        },
+        {
+          "file": "e9e50.svg",
+          "x": 616,
+          "y": 348.5,
+          "width": 24,
+          "height": 24,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "transactions",
+      "geometry": [
+        {
+          "selector": ".transactions-panel",
+          "x": 256,
+          "y": 174,
+          "width": 1160,
+          "height": 366
+        }
+      ],
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "loaded": true
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "b1af2.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "390fd.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1195,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1334.515625,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "ac9f3.svg",
+          "x": 268,
+          "y": 123,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "3e41e.svg",
+          "x": 862,
+          "y": 123,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "transaction-details",
+      "geometry": [
+        {
+          "selector": ".receipt",
+          "x": 256,
+          "y": 110,
+          "width": 540,
+          "height": 627
+        },
+        {
+          "selector": ".transaction-overview",
+          "x": 820,
+          "y": 110,
+          "width": 420,
+          "height": 256
+        }
+      ],
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "loaded": true
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "b1af2.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "390fd.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "1311b.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "d773b.svg",
+          "x": 957.171875,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1096.6875,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "f9c4d.svg",
+          "x": 1219.171875,
+          "y": 48,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "reports",
+      "geometry": [
+        {
+          "selector": ".metrics",
+          "x": 256,
+          "y": 174,
+          "width": 1160,
+          "height": 148
+        },
+        {
+          "selector": ".report-daily",
+          "x": 256,
+          "y": 342,
+          "width": 1160,
+          "height": 447
+        }
+      ],
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "loaded": true
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "b1af2.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "f1e4e.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1033.40625,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1172.921875,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "6a7c5.svg",
+          "x": 1295.40625,
+          "y": 48,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "3e41e.svg",
+          "x": 1386,
+          "y": 123,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "reports-weekly",
+      "geometry": [
+        {
+          "selector": ".report-chart",
+          "x": 256,
+          "y": 342,
+          "width": 1160,
+          "height": 269
+        },
+        {
+          "selector": ".report-summary",
+          "x": 256,
+          "y": 631,
+          "width": 1160,
+          "height": 151
+        }
+      ],
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "loaded": true
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "b1af2.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "f1e4e.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1033.40625,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1172.921875,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "6a7c5.svg",
+          "x": 1295.40625,
+          "y": 48,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "3e41e.svg",
+          "x": 1386,
+          "y": 123,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "reports-monthly",
+      "geometry": [
+        {
+          "selector": ".report-chart",
+          "x": 256,
+          "y": 342,
+          "width": 1160,
+          "height": 269
+        },
+        {
+          "selector": ".report-summary",
+          "x": 256,
+          "y": 631,
+          "width": 1160,
+          "height": 151
+        }
+      ],
+      "images": [
+        {
+          "file": "67ea5.svg",
+          "x": 42.125,
+          "y": 31.890625,
+          "width": 147.734375,
+          "height": 41.859375,
+          "loaded": true
+        },
+        {
+          "file": "39c88.svg",
+          "x": 28,
+          "y": 187.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "b1af2.svg",
+          "x": 28,
+          "y": 241.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "2d35e.svg",
+          "x": 28,
+          "y": 295.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "f1e4e.svg",
+          "x": 28,
+          "y": 349.5,
+          "width": 19,
+          "height": 19,
+          "loaded": true
+        },
+        {
+          "file": "97348.svg",
+          "x": 26,
+          "y": 853,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "d773b.svg",
+          "x": 1033.40625,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "567ec.svg",
+          "x": 1172.921875,
+          "y": 49,
+          "width": 16,
+          "height": 16,
+          "loaded": true
+        },
+        {
+          "file": "6a7c5.svg",
+          "x": 1295.40625,
+          "y": 48,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        },
+        {
+          "file": "3e41e.svg",
+          "x": 1386,
+          "y": 123,
+          "width": 18,
+          "height": 18,
+          "loaded": true
+        }
+      ]
+    }
+  ],
+  "failedResponses": [],
+  "exceptions": [],
+  "consoleErrors": []
+}

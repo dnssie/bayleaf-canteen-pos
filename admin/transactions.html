@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Transactions · The Bayleaf Canteen POS</title>
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/print.css" />
+    <link rel="stylesheet" href="../app/styles.css" />
+    <link rel="stylesheet" href="../cashier/payment/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script data-demo-app src="../app/script.js" defer></script>
+    <script src="../app/catalog/script.js" defer></script>
+    <script src="../cashier/script.js" defer></script>
+    <script src="../cashier/data/script.js" defer></script>
+    <script src="data/script.js" defer></script>
+    <script src="dates/script.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="dates/styles.css" />
+  </head>
+  <body data-app-role="admin" data-admin-screen="transactions">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="app-shell phase4-app admin-app" data-figma-node="2004:34026">
+      <aside class="sidebar" aria-label="Admin workspace">
+        <div class="sidebar-identity">
+          <div class="sidebar-brand">
+            <img src="../assets/icons/67ea5.svg" alt="The Bayleaf Cavite" />
+          </div>
+          <p class="sidebar-role">ADMIN WORKSPACE</p>
+        </div>
+        <nav class="sidebar-nav" aria-label="Admin navigation">
+          <a href="dashboard.html"
+            ><img src="../assets/icons/39c88.svg" alt="" /><span
+              >Dashboard</span
+            ></a
+          ><a href="menu.html"
+            ><img src="../assets/icons/b1af2.svg" alt="" /><span
+              >Menu Management</span
+            ></a
+          ><a href="transactions.html" aria-current="page"
+            ><img src="../assets/icons/390fd.svg" alt="" /><span
+              >Transactions</span
+            ></a
+          ><a href="reports.html"
+            ><img src="../assets/icons/1311b.svg" alt="" /><span
+              >Sales Reports</span
+            ></a
+          >
+        </nav>
+        <div class="sidebar-profile">
+          <div class="profile">
+            <span class="profile-avatar">AR</span>
+            <div>
+              <p class="profile-name">Ana Reyes</p>
+              <p class="profile-role">Admin</p>
+            </div>
+          </div>
+          <a data-demo-logout class="logout" href="../index.html"
+            ><img src="../assets/icons/97348.svg" alt="" /><span
+              >Log out</span
+            ></a
+          >
+        </div>
+      </aside>
+      <main class="workspace admin-workspace" id="main">
+        <header class="admin-heading">
+          <div>
+            <h1>Transactions</h1>
+            <div class="admin-subtitle">
+              <p data-page-subtitle>Completed cash payments.</p>
+              
+            </div>
+          </div>
+          <div class="heading-actions">
+            <div class="header-clock" aria-label="Date and time in Asia/Manila">
+              <span
+                ><img src="../assets/icons/d773b.svg" alt="" /><time
+                  data-header-date
+                  >October 31, 2026</time
+                ></span
+              ><span>·</span
+              ><span
+                ><img src="../assets/icons/567ec.svg" alt="" /><time
+                  data-header-time
+                  >3:42 PM</time
+                ></span
+              >
+            </div>
+          </div>
+        </header>
+        <div class="transaction-filters">
+          <label class="field transaction-search"
+            ><img src="../assets/icons/ac9f3.svg" alt="" /><input
+              type="search"
+              aria-label="Search transaction number"
+              placeholder="Search transaction number…"
+              data-transaction-search
+          /></label>
+          <div class="admin-date" style="--date-width: 200px">
+            <input
+              hidden
+              type="date"
+              data-admin-date
+              value="2026-10-31"
+              aria-label="Select date"
+            /><button
+              type="button"
+              class="field admin-date-trigger"
+              data-date-trigger
+              aria-haspopup="dialog"
+              aria-expanded="false"
+            >
+              <span data-date-label>31 Oct 2026</span
+              ><img src="../assets/icons/3e41e.svg" alt="" />
+            </button>
+          </div>
+          <button type="button" class="clear-filter" data-clear-filters hidden>
+            Clear filters
+          </button>
+        </div>
+        <section class="transactions-panel" aria-label="Completed transactions">
+          <table class="transactions-table">
+            <thead>
+              <tr>
+                <th scope="col">TRANSACTION NO.</th>
+                <th scope="col">DATE &amp; TIME</th>
+                <th scope="col">CASHIER</th>
+                <th scope="col">TOTAL</th>
+                <th scope="col">ACTION</th>
+              </tr>
+            </thead>
+            <tbody data-transaction-rows>
+              <tr>
+                <td>BL-20261031-001</td>
+                <td>31 Oct 2026 · 12:15 PM</td>
+                <td>Mia Santos</td>
+                <td>₱150.00</td>
+                <td><a href="transaction-details.html">View details</a></td>
+              </tr>
+              <tr>
+                <td>BL-20261031-002</td>
+                <td>31 Oct 2026 · 12:22 PM</td>
+                <td>Mia Santos</td>
+                <td>₱105.00</td>
+                <td><a href="transaction-details.html">View details</a></td>
+              </tr>
+              <tr>
+                <td>BL-20261031-003</td>
+                <td>31 Oct 2026 · 12:30 PM</td>
+                <td>Mia Santos</td>
+                <td>₱70.00</td>
+                <td><a href="transaction-details.html">View details</a></td>
+              </tr>
+              <tr>
+                <td>BL-20261031-004</td>
+                <td>31 Oct 2026 · 12:38 PM</td>
+                <td>Mia Santos</td>
+                <td>₱90.00</td>
+                <td><a href="transaction-details.html">View details</a></td>
+              </tr>
+              <tr>
+                <td>BL-20261031-005</td>
+                <td>31 Oct 2026 · 12:45 PM</td>
+                <td>Mia Santos</td>
+                <td>₱135.00</td>
+                <td><a href="transaction-details.html">View details</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <div data-transaction-empty hidden>
+            <div class="empty-state">
+              <span class="empty-state__icon"
+                ><img src="../assets/icons/1a8f7.svg" alt=""
+              /></span>
+              <h3>No transactions yet</h3>
+              <p>Completed cash payments will appear here.</p>
+            </div>
+          </div>
+        </section>
+        <div class="payment-row history-summary">
+          <span data-transaction-count>Showing 5 of 5 transactions</span
+          ><span>Cash only</span>
+        </div>
+        <p class="admin-message" data-admin-message role="status" hidden></p>
+      </main>
+    </div>
+    
+    <noscript><p class="app-pending">Enable JavaScript to use this application.</p></noscript>
+  </body>
+</html>

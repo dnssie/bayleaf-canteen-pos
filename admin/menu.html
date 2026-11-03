@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Menu Management · The Bayleaf Canteen POS</title>
+    <link rel="stylesheet" href="../css/tokens.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/print.css" />
+    <link rel="stylesheet" href="../app/styles.css" />
+    <link rel="stylesheet" href="../cashier/payment/styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script data-demo-app src="../app/script.js" defer></script>
+    <script src="../app/catalog/script.js" defer></script>
+    <script src="../cashier/script.js" defer></script>
+    <script src="../cashier/data/script.js" defer></script>
+    <script src="data/script.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body data-app-role="admin" data-admin-screen="menu">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="app-shell phase4-app admin-app" data-figma-node="2004:32943">
+      <aside class="sidebar" aria-label="Admin workspace">
+        <div class="sidebar-identity">
+          <div class="sidebar-brand">
+            <img src="../assets/icons/67ea5.svg" alt="The Bayleaf Cavite" />
+          </div>
+          <p class="sidebar-role">ADMIN WORKSPACE</p>
+        </div>
+        <nav class="sidebar-nav" aria-label="Admin navigation">
+          <a href="dashboard.html"
+            ><img src="../assets/icons/39c88.svg" alt="" /><span
+              >Dashboard</span
+            ></a
+          ><a href="menu.html" aria-current="page"
+            ><img src="../assets/icons/5bd1b.svg" alt="" /><span
+              >Menu Management</span
+            ></a
+          ><a href="transactions.html"
+            ><img src="../assets/icons/2d35e.svg" alt="" /><span
+              >Transactions</span
+            ></a
+          ><a href="reports.html"
+            ><img src="../assets/icons/1311b.svg" alt="" /><span
+              >Sales Reports</span
+            ></a
+          >
+        </nav>
+        <div class="sidebar-profile">
+          <div class="profile">
+            <span class="profile-avatar">AR</span>
+            <div>
+              <p class="profile-name">Ana Reyes</p>
+              <p class="profile-role">Admin</p>
+            </div>
+          </div>
+          <a data-demo-logout class="logout" href="../index.html"
+            ><img src="../assets/icons/97348.svg" alt="" /><span
+              >Log out</span
+            ></a
+          >
+        </div>
+      </aside>
+      <main class="workspace admin-workspace menu-workspace" id="main">
+        <header class="admin-heading">
+          <div>
+            <h1>Menu Management</h1>
+            <div class="admin-subtitle">
+              <p data-page-subtitle>19 menu items · 18 active · 1 inactive</p>
+            </div>
+          </div>
+          <div class="heading-actions">
+            <div class="header-clock" aria-label="Date and time in Asia/Manila">
+              <span
+                ><img src="../assets/icons/d773b.svg" alt="" /><time
+                  data-header-date
+                  >October 31, 2026</time
+                ></span
+              ><span>·</span
+              ><span
+                ><img src="../assets/icons/567ec.svg" alt="" /><time
+                  data-header-time
+                  >3:42 PM</time
+                ></span
+              >
+            </div>
+            <button type="button" class="btn" data-add-item>
+              <img src="../assets/icons/22fad.svg" alt="" />Add Menu Item
+            </button>
+          </div>
+        </header>
+        <div class="admin-menu-filters">
+          <label class="field menu-search"
+            ><img src="../assets/icons/ac9f3.svg" alt="" /><input
+              type="search"
+              placeholder="Search menu items…"
+              aria-label="Search menu items"
+              data-menu-search
+          /></label>
+          <div
+            class="field select-field admin-select"
+            style="--select-width: 200px"
+          >
+            <select data-menu-category aria-label="Menu category">
+              <option value="">All categories</option>
+              <option value="Ulam">Ulam</option>
+              <option value="Gulay">Gulay</option>
+              <option value="Rice">Rice</option>
+              <option value="Add-ons">Add-ons</option></select
+            ><img src="../assets/icons/aa8c0.svg" alt="" />
+          </div>
+          <p class="small muted">
+            Inactive items aren't shown on the cashier menu.
+          </p>
+        </div>
+        <section class="admin-menu-panel" aria-label="Menu items">
+          <table class="admin-menu-table">
+            <thead>
+              <tr>
+                <th scope="col">ITEM NAME</th>
+                <th scope="col">CATEGORY</th>
+                <th scope="col">PRICE</th>
+                <th scope="col">STATUS</th>
+                <th scope="col">ACTIONS</th>
+              </tr>
+            </thead>
+            <tbody data-menu-rows>
+              <tr data-menu-row="adobo">
+                <td>Chicken Adobo</td>
+                <td>Ulam</td>
+                <td>₱55.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="adobo">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="adobo"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="menudo">
+                <td>Pork Menudo</td>
+                <td>Ulam</td>
+                <td>₱50.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="menudo">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="menudo"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="giniling">
+                <td>Pork Giniling</td>
+                <td>Ulam</td>
+                <td>₱45.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="giniling">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="giniling"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="afritada">
+                <td>Chicken Afritada</td>
+                <td>Ulam</td>
+                <td>₱55.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="afritada">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="afritada"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="sinigang">
+                <td>Pork Sinigang</td>
+                <td>Ulam</td>
+                <td>₱55.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="sinigang">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="sinigang"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="bistek">
+                <td>Bistek Tagalog</td>
+                <td>Ulam</td>
+                <td>₱60.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="bistek">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="bistek"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="chicken">
+                <td>Fried Chicken</td>
+                <td>Ulam</td>
+                <td>₱55.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="chicken">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="chicken"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="bicol" class="inactive-menu-row">
+                <td>Pork Bicol Express</td>
+                <td>Ulam</td>
+                <td>₱55.00</td>
+                <td><span class="badge badge--inactive">Inactive</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="bicol">Edit</button
+                    ><button type="button" data-toggle-item="bicol" class="">
+                      Activate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="bbq">
+                <td>Pork BBQ</td>
+                <td>Ulam</td>
+                <td>₱35.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="bbq">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="bbq"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="fish">
+                <td>Fried Fish</td>
+                <td>Ulam</td>
+                <td>₱45.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="fish">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="fish"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="pinakbet">
+                <td>Pinakbet</td>
+                <td>Gulay</td>
+                <td>₱35.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="pinakbet">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="pinakbet"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="sayote">
+                <td>Ginisang Sayote</td>
+                <td>Gulay</td>
+                <td>₱30.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="sayote">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="sayote"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="monggo">
+                <td>Ginisang Monggo</td>
+                <td>Gulay</td>
+                <td>₱30.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="monggo">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="monggo"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="chopsuey">
+                <td>Chopsuey</td>
+                <td>Gulay</td>
+                <td>₱35.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="chopsuey">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="chopsuey"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="ampalaya">
+                <td>Ginisang Ampalaya</td>
+                <td>Gulay</td>
+                <td>₱30.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="ampalaya">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="ampalaya"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="laing">
+                <td>Laing</td>
+                <td>Gulay</td>
+                <td>₱35.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="laing">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="laing"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="steamed">
+                <td>Steamed Rice</td>
+                <td>Rice</td>
+                <td>₱15.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="steamed">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="steamed"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="fried">
+                <td>Fried Rice</td>
+                <td>Rice</td>
+                <td>₱20.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="fried">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="fried"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+              <tr data-menu-row="chips">
+                <td>Assorted Chips</td>
+                <td>Add-ons</td>
+                <td>₱10.00</td>
+                <td><span class="badge">Active</span></td>
+                <td>
+                  <div class="menu-row-actions">
+                    <button type="button" data-edit-item="chips">Edit</button
+                    ><button
+                      type="button"
+                      data-toggle-item="chips"
+                      class="destructive-link"
+                    >
+                      Deactivate
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div data-menu-empty hidden>
+            <div class="empty-state">
+              <span class="empty-state__icon"
+                ><img src="../assets/icons/1a8f7.svg" alt=""
+              /></span>
+              <h3>No matching menu items</h3>
+              <p>Try another item name or category.</p>
+            </div>
+          </div>
+        </section>
+        <div class="admin-modal-layer" data-menu-modal hidden>
+          <section
+            class="admin-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="menu-dialog-title"
+            tabindex="-1"
+          >
+            <form
+              data-menu-form
+              data-mode="add"
+              class="admin-dialog-content"
+              novalidate
+            >
+              <div class="admin-dialog-heading">
+                <h2 id="menu-dialog-title">Add Menu Item</h2>
+                <button
+                  type="button"
+                  class="icon-button"
+                  data-close-modal
+                  aria-label="Close dialog"
+                >
+                  <img src="../assets/icons/b154b.svg" alt="" />
+                </button>
+              </div>
+              <p class="muted" data-form-description>
+                Add a new item to the menu.
+              </p>
+              <div class="field-group">
+                <label class="field-label" for="item-name">Item name</label>
+                <div class="field">
+                  <input
+                    id="item-name"
+                    name="name"
+                    placeholder="Enter item name"
+                    value=""
+                    required
+                    aria-describedby="name-error"
+                  />
+                </div>
+                <p
+                  class="field-error"
+                  id="name-error"
+                  data-error="name"
+                  hidden
+                ></p>
+              </div>
+              <div class="field-group">
+                <label class="field-label" for="item-category">Category</label>
+                <div class="field select-field">
+                  <select
+                    id="item-category"
+                    name="category"
+                    required
+                    aria-describedby="category-error"
+                  >
+                    <option value="">Select category</option>
+                    <option>Ulam</option>
+                    <option>Gulay</option>
+                    <option>Rice</option>
+                    <option>Add-ons</option></select
+                  ><img src="../assets/icons/aa8c0.svg" alt="" />
+                </div>
+                <p class="small muted">Ulam · Gulay · Rice · Add-ons</p>
+                <p
+                  class="field-error"
+                  id="category-error"
+                  data-error="category"
+                  hidden
+                ></p>
+              </div>
+              <div class="field-group">
+                <label class="field-label" for="item-price">Price</label>
+                <div class="field menu-price">
+                  <span aria-hidden="true">₱</span
+                  ><input
+                    id="item-price"
+                    name="price"
+                    inputmode="decimal"
+                    placeholder="0.00"
+                    value=""
+                    required
+                    aria-describedby="price-error"
+                  />
+                </div>
+                <p class="small muted">Enter the price in pesos (₱).</p>
+                <p
+                  class="field-error"
+                  id="price-error"
+                  data-error="price"
+                  hidden
+                ></p>
+              </div>
+              <div data-form-status>
+                <p class="small muted">
+                  New items appear on the cashier menu right away.
+                </p>
+              </div>
+              <p class="field-error" data-form-error role="status" hidden></p>
+              <hr class="divider" />
+              <div class="modal-actions">
+                <button
+                  type="button"
+                  class="btn btn--secondary"
+                  data-close-modal
+                >
+                  Cancel</button
+                ><button class="btn" type="submit" data-save-item>Save</button>
+              </div>
+            </form>
+          </section>
+        </div>
+        <div class="admin-modal-layer" data-status-modal hidden>
+          <section
+            class="admin-dialog status-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="status-dialog-title"
+            tabindex="-1"
+          >
+            <div class="admin-dialog-content">
+              <div class="admin-dialog-heading">
+                <h2 id="status-dialog-title">Deactivate menu item?</h2>
+                <button
+                  type="button"
+                  class="icon-button"
+                  data-close-modal
+                  aria-label="Close dialog"
+                >
+                  <img src="../assets/icons/b154b.svg" alt="" />
+                </button>
+              </div>
+              <span class="deactivate-icon"
+                ><img src="../assets/icons/e9e50.svg" alt=""
+              /></span>
+              <h3 data-confirm-name>Chicken Adobo</h3>
+              <p class="muted" data-confirm-description>
+                Chicken Adobo will be hidden from the cashier menu. Past orders
+                and receipts will stay the same.
+              </p>
+              <p class="small muted">
+                You can activate it again in Menu Management.
+              </p>
+              <p
+                class="field-error"
+                data-confirm-error
+                role="status"
+                hidden
+              ></p>
+              <hr class="divider" />
+              <div class="modal-actions">
+                <button
+                  type="button"
+                  class="btn btn--secondary"
+                  data-close-modal
+                >
+                  Cancel</button
+                ><button
+                  type="button"
+                  class="btn btn--danger"
+                  data-confirm-status
+                >
+                  Deactivate Item
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <p class="admin-message" data-admin-message role="status" hidden></p>
+      </main>
+    </div>
+    
+    <noscript><p class="app-pending">Enable JavaScript to use this application.</p></noscript>
+  </body>
+</html>

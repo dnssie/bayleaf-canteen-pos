@@ -1,0 +1,28 @@
+/* Desktop Figma reference: 1440 x 900. Preserve practical scrolling on smaller windows. */
+.app-shell { display: flex; min-width: 1100px; height: 100vh; min-height: 700px; }
+.sidebar { display: flex; flex-direction: column; flex: 0 0 var(--sidebar-width); width: var(--sidebar-width); gap: 30px; background: white; border-right: 1px solid var(--border-default); padding: 28px 16px 20px; }
+.sidebar-identity { display: flex; flex-direction: column; gap: 50px; padding: 0 8px; }
+.sidebar-brand { display: flex; align-items: flex-start; justify-content: center; height: 49px; padding-top: 3.8955px; }
+.sidebar-brand img { flex: 0 0 auto; }
+.sidebar-role { font-size: 12px; font-weight: 600; color: var(--text-secondary); }
+.sidebar-nav { display: flex; flex-direction: column; gap: 8px; }
+.sidebar-nav a { display: flex; align-items: center; gap: 10px; min-height: 46px; padding: 12px; border-radius: 8px; color: var(--text-secondary); text-decoration: none; }
+.sidebar-nav a[aria-current='page'] { color: var(--brand-dark-olive); background: var(--surface-light-olive); font-weight: 600; }
+.sidebar-profile { margin-top: auto; border-top: 1px solid var(--border-default); padding-top: 20px; display: flex; flex-direction: column; gap: 16px; }
+.profile { display: flex; align-items: center; gap: 10px; }
+.profile-avatar { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--surface-main-background); color: var(--brand-primary-olive); font-weight: 600; }
+.profile-name { font-weight: 600; }
+.profile-role { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+.logout { display: flex; align-items: center; gap: 10px; padding: 8px 10px; color: var(--text-secondary); text-decoration: none; }
+.workspace { min-width: 0; flex: 1; padding: var(--content-padding); display: flex; flex-direction: column; gap: 20px; overflow-y: auto; }
+.page-heading { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.page-heading p { color: var(--text-secondary); margin-top: 4px; }
+.header-clock { display: flex; align-items: center; gap: 8px; padding: 6px 10px; border: 1px solid var(--border-default); border-radius: 8px; background: white; color: var(--text-secondary); font-size: 12px; white-space: nowrap; }
+.header-clock > span { display: flex; align-items: center; gap: 6px; }
+.heading-actions { display: flex; align-items: center; gap: 24px; }
+.metrics { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }
+.review-tools { padding: 12px 24px; display: flex; gap: 24px; align-items: center; border-bottom: 1px solid var(--border-default); background: white; font-size: 12px; }
+.review-tools a { color: var(--brand-dark-olive); text-underline-offset: 3px; }
+.review-tools strong { margin-right: auto; }
+.preview-note { padding: 16px 24px; color: var(--text-secondary); font-size: 12px; }
+@media (max-width: 1100px) { .review-tools { min-width: 1100px; } }
